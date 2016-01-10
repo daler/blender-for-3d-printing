@@ -17,8 +17,6 @@ Action                       Description
 .. admonition:: Exercise
     :class: exercise
 
-    *First steps in Blender . . .*
-
     * Manipulate the view so that only the cube fills the 3D View.
 
 
