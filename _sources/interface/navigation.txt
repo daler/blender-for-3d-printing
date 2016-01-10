@@ -41,13 +41,11 @@ Action             Description
 .. admonition:: Exercise
     :class: exercise
 
-    *Getting used to snapping the view*
-
     * Play around with the view -- use :kbd:`MMB` to randomly rotate the view,
       then use the NumPad keys to snap to views.
 
-    Note the top left corner (view label) and bottom left corner (axes) as you
-    do so.
+    * Note the top left corner (view label) and bottom left corner (axes) as
+      you do so.
 
 
 .. seealso::
