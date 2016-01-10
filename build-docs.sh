@@ -18,11 +18,11 @@ fi
 
 HERE=$(pwd)
 MSG="Adding gh-pages docs for $(git log --abbrev-commit | head -n1)"
-DOCSOURCE=$HERE
+DOCSOURCE=$HERE/build/html
 TMPREPO=/tmp/doc
 
 # make docs
-(cd $DOCSOURCE && make clean html)
+make clean html
 
 # checkout a fresh copy of the remote's gh-pages branch to a temp location
 rm -rf $TMPREPO
