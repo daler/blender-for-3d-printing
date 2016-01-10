@@ -21,9 +21,11 @@ Action                       Description
 Use NumPad to snap to views
 ---------------------------
 
-Laptop doesn't have a NumPad? Go to :menuselection:`File --> User Preferences
---> Input tab` and check the `Emulate Numpad` box. This will make the top
-number keys behave like the NumPad.
+.. note::
+
+    Laptop doesn't have a NumPad? Go to :menuselection:`File --> User Preferences
+    --> Input tab` and check the `Emulate Numpad` box. This will make the top
+    number keys behave like the NumPad.
 
 ================== ============================================================
 Action             Description
