@@ -1,0 +1,59 @@
+Navigate the 3D View
+====================
+
+Rotate/pan/zoom with mouse
+--------------------------
+
+Manipulating the view is important for moving around the objects you create.
+
+============================ ============================================================
+Action                       Description
+============================ ============================================================
+:kbd:`MMB`                   Rotate the view
+:kbd:`Shift-MMB`             Pan the view
+:kbd:`Ctrl-MMB`/:kbd:`Wheel` Zoom the view
+============================ ============================================================
+
+.. admonition:: Exercise
+    :class: exercise
+
+    *First steps in Blender . . .*
+
+    * Manipulate the view so that only the cube fills the 3D View.
+
+
+Use NumPad to snap to views
+---------------------------
+
+Laptop doesn't have a NumPad? Go to :menuselection:`File --> User Preferences
+--> Input tab` and check the `Emulate Numpad` box. This will make the top
+number keys behave like the NumPad.
+
+================== ============================================================
+Action             Description
+================== ============================================================
+:kbd:`Numpad7`     Snap to top view
+:kbd:`Numpad1`     Snap to view from the front
+:kbd:`Numpad3`     Snap to view from the right
+:kbd:`Numpad5`     Swap between orthographic and perspective views
+:kbd:`Numpad9`     Swap (switches between top/bottom or left/right)
+================== ============================================================
+
+
+.. admonition:: Exercise
+    :class: exercise
+
+    *Getting used to snapping the view*
+
+    * Play around with the view -- use :kbd:`MMB` to randomly rotate the view,
+      then use the NumPad keys to snap to views.
+
+    Note the top left corner (view label) and bottom left corner (axes) as you
+    do so.
+
+
+.. seealso::
+
+    The `Blender documentation on the 3D view
+    <https://www.blender.org/manual/editors/3dview/navigate/3d_view.html>`_ has
+    more details.

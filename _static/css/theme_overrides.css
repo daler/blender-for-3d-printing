@@ -1,0 +1,105 @@
+/*
+ * This stylesheet is applied after the theme's default one,
+ * and thus any overrides or additions can be added here.
+ *
+ * More info:
+ *     http://sphinx-doc.org/extdev/appapi.html?highlight=add_stylesheet#sphinx.application.Sphinx.add_stylesheet
+ *     https://github.com/snide/sphinx_rtd_theme/issues/117#issuecomment-41571653
+ */
+
+/* kbd role */
+.kbd.docutils.literal {
+    color: #333;
+    font-family: "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
+    font-size: 1em;
+}
+
+/* Ensure background of input fields is light color even when a local theme wants it to be dark */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="url"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="week"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="color"] {
+    background-color:#FCFCFC;
+}
+
+/* excercises */
+.rst-content .exercise .admonition-title{
+    background: #5d93a8;
+    color: #fff;
+}
+
+.wy-side-nav-search {
+    background-color: #c60;
+}
+.wy-side-nav-search a {
+    color: #fff;
+}
+.wy-side-nav-search a:visited {
+    color: #fff;
+}
+
+a {
+    color: #5d93a8;
+}
+a:visited {
+    color: #888;
+}
+
+
+.rst-content .seealso {
+    background-color: #eee;
+}
+.rst-content .seealso .admonition-title {
+    background-color: #aaa;
+}
+
+.rst-content div.exercise {
+    background-color: #fff8cf;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 1px;
+    margin-bottom: 24px;
+}
+
+.rst-content .exercise p{
+}
+
+/* Reference admonition */
+.rst-content .refbox .admonition-title {
+    background: #bbb;
+}
+.rst-content .refbox {
+    -webkit-font-smoothing: antialiased;
+    padding: 12px;
+    line-height: 24px;
+    margin-bottom: 24px;
+    background: #e3e3e3;
+}
+
+/* Ugly 'red' literals */
+.rst-content tt.literal, .rst-content tt.literal, .rst-content code.literal {
+    color:#404040;
+}
+
+/* Fix giant captions */
+.caption-text {
+    font-size: 13px;
+    font-family: Lato, proxima-nova, 'Helvetica Neue', Arial, sans-serif;
+    font-weight: normal;
+    line-height: 20px;
+    color:#808080;
+}
+
+.caption {
+    line-height: 0px;
+}

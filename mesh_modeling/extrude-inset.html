@@ -1,0 +1,244 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Extrude and inset &mdash; Blender for 3D Printing</title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Roboto+Slab:400,700|Inconsolata:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../_static/css/theme_overrides.css" type="text/css" />
+  
+
+  
+    <link rel="top" title="Blender for 3D Printing" href="../index.html"/>
+        <link rel="up" title="Mesh modeling" href="index.html"/>
+        <link rel="next" title="Printing" href="../printing/index.html"/>
+        <link rel="prev" title="Mesh concepts" href="mesh-concepts.html"/> 
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        
+          <a href="../contents.html" class="fa fa-home"> Blender for 3D Printing</a>
+        
+        
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+          
+          
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../interface/index.html">Interface</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../interface/navigation.html">Navigate the 3D View</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../interface/selection.html">Selecting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../interface/3d-cursor.html">3D Cursor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../interface/spacebar.html">Spacebar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../interface/transforms.html">Transformations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../interface/index.html#starting-blender">Starting Blender</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Mesh modeling</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="mesh-concepts.html">Mesh concepts</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Extrude and inset</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../printing/index.html">Printing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../printing/quads-tris-export.html">Exporting to STL</a></li>
+</ul>
+</li>
+</ul>
+
+          
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../contents.html">Blender for 3D Printing</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../contents.html">Docs</a> &raquo;</li>
+      
+          <li><a href="index.html">Mesh modeling</a> &raquo;</li>
+      
+    <li>Extrude and inset</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          <a href="../_sources/mesh_modeling/extrude-inset.txt" rel="nofollow"> View page source</a>
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document">
+            
+  <div class="section" id="extrude-and-inset">
+<h1>Extrude and inset<a class="headerlink" href="#extrude-and-inset" title="Permalink to this headline">¶</a></h1>
+<p>These are two techniques that can help with adding mesh geometry.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="52%" />
+<col width="48%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Action</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="kbd docutils literal"><span class="pre">E</span></code></td>
+<td>Extrude</td>
+</tr>
+<tr class="row-odd"><td><code class="kbd docutils literal"><span class="pre">I</span></code></td>
+<td>Inset</td>
+</tr>
+</tbody>
+</table>
+<div class="exercise admonition">
+<p class="first admonition-title">Exercise</p>
+<ul class="simple">
+<li>Patch the large hole in the torus: select a single vertex and extrude it
+into the middle of the hole (<code class="kbd docutils literal"><span class="pre">E</span></code>)</li>
+<li>Position the vertex &#8211; you may need to move around a bit to get a good
+view, and possibly use wireframe mode (<code class="kbd docutils literal"><span class="pre">Z</span></code>).</li>
+<li>Fill the hole with faces (<code class="kbd docutils literal"><span class="pre">F</span></code>)</li>
+</ul>
+<p class="last">In this case, to get a perfect positioning, we&#8217;d have to do the math to
+figure out the position based on the radius of the circle</p>
+</div>
+<div class="exercise admonition">
+<p class="first admonition-title">Exercise</p>
+<p>The goal here is to make a rough USB thumb drive shape . . .</p>
+<ul class="last simple">
+<li>Back in Object mode, delete the torus.</li>
+<li>Add a cube</li>
+<li>Flatten along Z into the rough thickness of a thumb drive</li>
+<li>Switch to Edit Mode</li>
+<li>Select the front face of the cube (now more of a rectangular prism...)</li>
+<li>Extrude the face out to make the &#8220;handle&#8221; part (<code class="kbd docutils literal"><span class="pre">E</span></code>, move mouse,
+<code class="kbd docutils literal"><span class="pre">LMB</span></code> to confirm)</li>
+<li>With the extruded face selected, inset it a bit (<code class="kbd docutils literal"><span class="pre">I</span></code>)</li>
+<li>With the inset face selected, extrude it to make the outside of the USB connector</li>
+<li>With the new extruded face selected, inset a bit.</li>
+<li>Extrude the new inset face <em>backwards</em> to make the socket part of the connector.</li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../printing/index.html" class="btn btn-neutral float-right" title="Printing">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="mesh-concepts.html" class="btn btn-neutral" title="Mesh concepts"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright : This work is licensed under the Creative Commons Attribution 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/.
+    </p>
+  </div>
+
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'2.76',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
