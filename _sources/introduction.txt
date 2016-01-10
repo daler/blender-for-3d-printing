@@ -1,0 +1,43 @@
+************
+Introduction
+************
+
+This tutorial serves as a standalone introduction to using Blender for 3D printing. It intentionally skips over parts of
+Blender to prioritize getting up to speed as quickly as possible. For further learning, there are many resources,
+including:
+
+    * `Blender Manual <https://www.blender.org/manual/>`_
+    * `blender.stackexchange.com <http://blender.stackexchange.com/>`_
+    * `blenderartists.org forum <http://blenderartists.org/forum/>`_
+    * `List of support options at blender.org <http://www.blender.org/support/>`_
+
+This tutorial is broken into three sections: Interface, Mesh Modeling, 3D Printing.
+
+Starting Blender
+================
+After starting Blender and clicking to dismiss the splash screen, we see this default interface:
+
+.. figure:: images/001.png
+   :align: center
+
+Here's an annotated version of the default layout:
+
+.. figure:: images/002.png
+
+   Blender's default layout
+
+The interface is very customizable but we will be using this default layout. Most of our time will be spent in the 3D
+View. The sections are:
+
+1. Info
+2. 3D View
+3. Outliner *(used for complex scenes; we will be ignore this)*
+4. Properties
+5. Timeline *(used for animation; we will ignore this)*
+
+.. seealso::
+
+
+    The Blender manual on the `Interface
+    <https://www.blender.org/manual/interface/index.html#interface>`_ has
+    details about sections of the interface.
