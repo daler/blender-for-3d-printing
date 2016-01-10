@@ -4,8 +4,6 @@ Navigate the 3D View
 Rotate/pan/zoom with mouse
 --------------------------
 
-Manipulating the view is important for moving around the objects you create.
-
 ============================ ============================================================
 Action                       Description
 ============================ ============================================================
