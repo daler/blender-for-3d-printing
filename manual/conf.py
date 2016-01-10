@@ -44,27 +44,8 @@ source_suffix = '.rst'
 # The encoding of source files.
 #source_encoding = 'utf-8-sig'
 
-# The master toctree document.
-if 0:
-    exclude_patterns = ["contents_quicky.rst"]
-    master_doc = 'contents'
-else:
-    # Call quicky_index_gen.from_chapters()
-    # and use the QUICKY_CHAPTERS env var if its set
-    import os
-
-    def exec_file(fn):
-        code = compile(open(fn, 'r').read(), fn, 'exec')
-        namespace = {"__file__": fn}
-        exec(code, namespace, namespace)
-        return namespace
-
-    mod_path = os.path.join(os.path.dirname(__file__), "quicky_index_gen.py")
-    namespace = exec_file(mod_path)
-    del mod_path
-
-    master_doc, exclude_patterns = namespace["from_chapters"]()
-    del namespace
+exclude_patterns = ["contents_quicky.rst"]
+master_doc = 'contents'
 
 print("Using Index:", master_doc)
 
