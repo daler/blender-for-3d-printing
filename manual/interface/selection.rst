@@ -22,8 +22,6 @@ Action                  Description
 .. admonition:: Exercise
     :class: exercise
 
-    *Clean up the scene*
-
     * Deselect all (:kbd:`A`, may have to hit it a couple times)
 
     * Select the cube, then delete it (:kbd:`RMB`, :kbd:`X`)
@@ -36,8 +34,6 @@ Action                  Description
       out of it*) and the lamp (*the dot surrounded by dotted lines*) and
       delete them.
 
-    The camera and lamp are used for rendering images -- we don't need them for
-    3D printing work.
 
     .. figure:: /images/camera.png
         :width: 150px
@@ -49,3 +45,7 @@ Action                  Description
 
         Delete the lamp, too
 
+    .. note::
+
+         The camera and lamp are used for rendering images -- we don't need
+         them for 3D printing work.

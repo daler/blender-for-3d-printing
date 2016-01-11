@@ -4,8 +4,6 @@ Navigate the 3D View
 Rotate/pan/zoom with mouse
 --------------------------
 
-Manipulating the view is important for moving around the objects you create.
-
 ============================ ============================================================
 Action                       Description
 ============================ ============================================================
@@ -16,8 +14,6 @@ Action                       Description
 
 .. admonition:: Exercise
     :class: exercise
-
-    *First steps in Blender . . .*
 
     * Manipulate the view so that only the cube fills the 3D View.
 
@@ -32,9 +28,11 @@ Action                       Description
 Use NumPad to snap to views
 ---------------------------
 
-Laptop doesn't have a NumPad? Go to :menuselection:`File --> User Preferences
---> Input tab` and check the `Emulate Numpad` box. This will make the top
-number keys behave like the NumPad.
+.. note::
+
+    Laptop doesn't have a NumPad? Go to :menuselection:`File --> User Preferences
+    --> Input tab` and check the `Emulate Numpad` box. This will make the top
+    number keys behave like the NumPad.
 
 ================== ============================================================
 Action             Description
@@ -50,13 +48,11 @@ Action             Description
 .. admonition:: Exercise
     :class: exercise
 
-    *Getting used to snapping the view*
-
     * Play around with the view -- use :kbd:`MMB` to randomly rotate the view,
       then use the NumPad keys to snap to views.
 
-    Note the top left corner (view label) and bottom left corner (axes) as you
-    do so.
+    * Note the top left corner (view label) and bottom left corner (axes) as
+      you do so.
 
 
 
@@ -87,6 +83,7 @@ Action             Description
 
     Perspective view (more realistic view in some cases). Better for rendering
     or getting a feel for the model.
+
 .. seealso::
 
     The `Blender documentation on the 3D view
