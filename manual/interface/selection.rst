@@ -14,6 +14,11 @@ Action                  Description
 :kbd:`Ctrl-Shift-Z`     Redo last undo
 ====================== ================================================
 
+.. figure:: /images/selected.png
+    :width: 50%
+
+    The cube on the right is selected
+
 .. admonition:: Exercise
     :class: exercise
 
@@ -33,3 +38,14 @@ Action                  Description
 
     The camera and lamp are used for rendering images -- we don't need them for
     3D printing work.
+
+    .. figure:: /images/camera.png
+        :width: 150px
+
+        Delete the camera
+
+    .. figure:: /images/lamp.png
+        :width: 150px
+
+        Delete the lamp, too
+

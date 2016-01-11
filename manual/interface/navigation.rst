@@ -22,6 +22,13 @@ Action                       Description
     * Manipulate the view so that only the cube fills the 3D View.
 
 
+    .. figure:: /images/just_the_cube.png
+        :width: 50%
+
+        Aim for a view like this
+
+
+
 Use NumPad to snap to views
 ---------------------------
 
@@ -52,6 +59,34 @@ Action             Description
     do so.
 
 
+
+.. figure:: /images/front-crop.png
+    :width: 25%
+
+    Front view (X and Z axes visible)
+
+.. figure:: /images/side-crop.png
+    :width: 25%
+
+    Right view (Y and Z axes visible)
+
+.. figure:: /images/top-crop.png
+    :width: 25%
+
+    Top view (X and Y axes visible)
+
+.. figure:: /images/orthographic-crop.png
+    :width: 25%
+
+    Orthographic view (parallel lines on screen are also parallel on object;
+    units have same number of pixels everywhere on screen). Better for
+    precision modeling.
+
+.. figure:: /images/perspective-crop.png
+    :width: 25%
+
+    Perspective view (more realistic view in some cases). Better for rendering
+    or getting a feel for the model.
 .. seealso::
 
     The `Blender documentation on the 3D view

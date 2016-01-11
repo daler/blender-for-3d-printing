@@ -19,12 +19,12 @@ Starting Blender
 ================
 After starting Blender and clicking to dismiss the splash screen, we see this default interface:
 
-.. figure:: /images/blender_default_startup.png
+.. figure:: /images/001.png
    :align: center
 
 Here's an annotated version of the default layout:
 
-.. figure:: /images/getting_started_basics_interface_introduction_02.png
+.. figure:: /images/003.png
 
    Blender's default layout
 
