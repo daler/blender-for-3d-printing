@@ -199,6 +199,41 @@ knowing about the process of 3D printing.</p>
 <li>i.materialize</li>
 </ul>
 </div>
+<div class="section" id="units">
+<h2>Units<a class="headerlink" href="#units" title="Permalink to this headline">¶</a></h2>
+<p>TODO: setting units</p>
+<p>TODO: importing STL-with-units while having units set vs not</p>
+<p>TODO: exporting with units</p>
+</div>
+<div class="section" id="mesh-problems-and-solutions">
+<h2>Mesh problems and solutions<a class="headerlink" href="#mesh-problems-and-solutions" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="31%" />
+<col width="69%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Problem</th>
+<th class="head">Solution</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>non-manifold</td>
+<td>Fill holes (<code class="kbd docutils literal"><span class="pre">F</span></code>; may need <code class="kbd docutils literal"><span class="pre">Ctrl-T</span></code> as well)</td>
+</tr>
+<tr class="row-odd"><td>overhanging</td>
+<td>Add supports, or move widest face of model to Z=0</td>
+</tr>
+<tr class="row-even"><td>thin</td>
+<td>Add geometry or modify original design</td>
+</tr>
+<tr class="row-odd"><td>sharp, too-small faces</td>
+<td>Add geometry or modify design; try tri -&gt; quad -&gt;
+tri (<code class="kbd docutils literal"><span class="pre">Ctrl-T</span></code>, <code class="kbd docutils literal"><span class="pre">Ctrl-J</span></code>, <code class="kbd docutils literal"><span class="pre">Ctrl-T</span></code></td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 
 

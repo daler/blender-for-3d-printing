@@ -90,3 +90,26 @@ Checklist (summarized from http://support.ponoko.com/entries/21531613-How-to-exp
 * Sculpteo
 * i.materialize
 
+Units
+-----
+TODO: setting units
+
+TODO: importing STL-with-units while having units set vs not
+
+TODO: exporting with units
+
+Mesh problems and solutions
+---------------------------
+
+
+======================== ================================================
+Problem                  Solution
+======================== ================================================
+non-manifold             Fill holes (:kbd:`F`; may need :kbd:`Ctrl-T` as well)
+overhanging              Add supports, or move widest face of model to Z=0
+thin                     Add geometry or modify original design
+sharp, too-small faces   Add geometry or modify design; try tri -> quad ->
+                         tri (:kbd:`Ctrl-T`, :kbd:`Ctrl-J`, :kbd:`Ctrl-T`
+======================== ================================================
+
+
