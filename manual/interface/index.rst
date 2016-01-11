@@ -4,9 +4,12 @@
 Interface
 ########################
 
+Blender is designed for efficiency and usability rather than for learning, so
+it can have a steep learning curve. This section incrementally walks through
+the basics of the interface and manipulating 3D objects.
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
     navigation.rst
     selection.rst
@@ -15,9 +18,8 @@ Interface
     transforms.rst
 
 
-Starting Blender
-================
-After starting Blender and clicking to dismiss the splash screen, we see this default interface:
+After starting Blender and clicking to dismiss the splash screen, we see this
+default interface:
 
 .. figure:: /images/001.png
    :align: center
@@ -28,14 +30,25 @@ Here's an annotated version of the default layout:
 
    Blender's default layout
 
-The interface is very customizable but we will be using this default layout. Most of our time will be spent in the 3D
-View. The sections are:
 
-1. Info
-2. 3D View
-3. Outliner *(used for complex scenes; we will be ignore this)*
-4. Properties
-5. Timeline *(used for animation; we will ignore this)*
+Info
+    Standard menus like :menuselection:`File --> Save`
+
+
+3D View
+    Most of our work will happen in here. This is where objects are created and manipulated.
+
+Tool Shelf
+    Contains recently-used tools and context-dependent options.
+
+Outliner
+    Used for complex scenes; we can ignore for now.
+
+Properties
+    Many settings can be found among these panels
+
+Animation timeline
+    Used for animation; we can ignore for now.
 
 .. seealso::
 
