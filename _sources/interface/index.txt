@@ -18,9 +18,8 @@ the basics of the interface and manipulating 3D objects.
     transforms.rst
 
 
-Starting Blender
-================
-After starting Blender and clicking to dismiss the splash screen, we see this default interface:
+After starting Blender and clicking to dismiss the splash screen, we see this
+default interface:
 
 .. figure:: /images/001.png
    :align: center

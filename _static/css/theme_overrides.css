@@ -38,9 +38,13 @@ input[type="color"] {
     color: #fff;
 }
 
-.wy-side-nav-search {
+.wy-side-nav-search  {
     background-color: #c60;
 }
+.wy-nav-top {
+    background-color: #c60;
+}
+
 .wy-side-nav-search a {
     color: #fff;
 }
@@ -48,6 +52,13 @@ input[type="color"] {
     color: #fff;
 }
 
+
+.wy-nav-top a {
+    color: #fff;
+}
+.wy-nav-top a:visited {
+    color: #fff;
+}
 a {
     color: #5d93a8;
 }
@@ -55,6 +66,9 @@ a:visited {
     color: #888;
 }
 
+.rst-content .exercise p.first{
+
+}
 
 .rst-content .seealso {
     background-color: #eee;

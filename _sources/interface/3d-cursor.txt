@@ -3,6 +3,10 @@
 :kbd:`LMB` moves the **3D cursor** which is used for specifying a point in 3D
 space.
 
+.. figure:: /images/3dcursor.png
+
+    The 3D cursor
+
 A common workflow is to place the 3D cursor and then snap an object to it.
 Sometimes, in order to place the 3D cursor we first snap it to some other
 object.
@@ -21,7 +25,9 @@ Action                  Description
 
     * Select the cube and snap it to the cursor (:kbd:`Shift-S` :menuselection:`--> Selection to cursor`)
 
-        * Note which part of the cube is snapped to the cursor. We'll talk about this in a moment.
+    .. figure:: /images/snap-menu.png
+
+        Snap menu (:kbd:`Shift-S`)
 
     * Snap the 3D Cursor back to the origin (:kbd:`Shift-S` :menuselection:`--> Cursor to Center`)
 
