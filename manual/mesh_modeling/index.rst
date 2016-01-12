@@ -1,3 +1,5 @@
+.. _mesh_modeling:
+
 Mesh modeling
 =============
 
