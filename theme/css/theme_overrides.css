@@ -38,6 +38,10 @@ input[type="color"] {
     color: #fff;
 }
 
+.menuselection {
+    font-style: italic;
+}
+
 .wy-side-nav-search  {
     background-color: #c60;
 }
