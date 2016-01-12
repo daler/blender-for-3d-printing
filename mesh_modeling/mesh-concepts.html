@@ -73,6 +73,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../interface/3d-cursor.html">3D Cursor</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../interface/spacebar.html">Spacebar</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../interface/transforms.html">Transformations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../interface/cheatsheet-interface.html">Interface cheatsheet</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Mesh modeling</a><ul class="current">
@@ -127,8 +128,10 @@
 <p>Until now, we&#8217;ve been manipulating entire objects (like the cube). We&#8217;ve been in
 <strong>Object Mode</strong>. To make changes inside the object itself, we need to enter
 <strong>Edit Mode</strong>.</p>
-<p>The cube is an example of a <strong>mesh object</strong>. We can switch to <strong>Edit Mode</strong> of
-a mesh to access the <strong>vertices</strong> of the mesh and manipulate them.</p>
+<p>The cube is an example of a <strong>mesh object</strong>. A mesh is made up of individual
+<strong>vertices</strong>. These are connected by <strong>edges</strong>. Edges can be connected together
+to create <strong>faces</strong>. To access the vertices, edges, and faces of the mesh and
+manipulate them, we need to switch to <strong>Edit Mode</strong>.</p>
 <p>Everything you&#8217;ve learned so far &#8211; changing the view, grabbing, scaling,
 rotating, selecting, deleting, Space bar, undo &#8211; works the same.</p>
 <table border="1" class="docutils">
@@ -149,12 +152,40 @@ rotating, selecting, deleting, Space bar, undo &#8211; works the same.</p>
 </table>
 <div class="exercise admonition">
 <p class="first admonition-title">Exercise</p>
-<ul class="last simple">
+<ul class="simple">
 <li>With the cube selected, enter Edit Mode (<code class="kbd docutils literal"><span class="pre">Tab</span></code>)</li>
-<li>Deselect all (<code class="kbd docutils literal"><span class="pre">A</span></code>), then select one vertex or a few vertices</li>
-<li>Move them around, scale them, or rotate them</li>
-<li>Switch back to Object Mode</li>
+<li>Deselect all (<code class="kbd docutils literal"><span class="pre">A</span></code>), then select one vertex</li>
+<li>Add an adjacent vertext to the selection, and notice how the <strong>edge</strong> is
+highlighted.</li>
+<li>Select the other adjacent vertices to select the <strong>face</strong>.</li>
+<li>Move, scale, and/or rotate the face and/or individual vertices and/or edges.</li>
+<li>Switch back to Object Mode, and then scale, rotate, and move the entire
+cube</li>
 </ul>
+<div class="figure" id="id1">
+<a class="reference internal image-reference" href="../_images/object-cube.png"><img alt="../_images/object-cube.png" src="../_images/object-cube.png" style="width: 250px;" /></a>
+<p class="caption"><span class="caption-text">The cube in Object Mode</span></p>
+</div>
+<div class="figure" id="id2">
+<a class="reference internal image-reference" href="../_images/edit-cube.png"><img alt="../_images/edit-cube.png" src="../_images/edit-cube.png" style="width: 250px;" /></a>
+<p class="caption"><span class="caption-text">The cube in Edit Mode</span></p>
+</div>
+<div class="figure" id="id3">
+<a class="reference internal image-reference" href="../_images/edit-cube-vertex.png"><img alt="../_images/edit-cube-vertex.png" src="../_images/edit-cube-vertex.png" style="width: 250px;" /></a>
+<p class="caption"><span class="caption-text">One vertex selected in Edit Mode</span></p>
+</div>
+<div class="figure" id="id4">
+<a class="reference internal image-reference" href="../_images/edit-cube-edge.png"><img alt="../_images/edit-cube-edge.png" src="../_images/edit-cube-edge.png" style="width: 250px;" /></a>
+<p class="caption"><span class="caption-text">One edge selected in Edit Mode</span></p>
+</div>
+<div class="figure" id="id5">
+<a class="reference internal image-reference" href="../_images/edit-cube-face.png"><img alt="../_images/edit-cube-face.png" src="../_images/edit-cube-face.png" style="width: 250px;" /></a>
+<p class="caption"><span class="caption-text">One face selected in Edit Mode</span></p>
+</div>
+<div class="last figure" id="id6">
+<a class="reference internal image-reference" href="../_images/object-cube-warped.png"><img alt="../_images/object-cube-warped.png" src="../_images/object-cube-warped.png" style="width: 250px;" /></a>
+<p class="caption"><span class="caption-text">&#8220;Cube&#8221; in object mode after playing around with vertices, edges, faces</span></p>
+</div>
 </div>
 <div class="section" id="more-selection-tools">
 <h2>More selection tools<a class="headerlink" href="#more-selection-tools" title="Permalink to this headline">¶</a></h2>
@@ -187,40 +218,100 @@ rotating, selecting, deleting, Space bar, undo &#8211; works the same.</p>
 </table>
 <div class="exercise admonition">
 <p class="first admonition-title">Exercise</p>
-<ul class="last simple">
-<li>While in Object Mode, add a torus. Move it out of the way of the cube if
-you need to.</li>
-<li>With the torus selected, switch to Edit Mode in the torus</li>
+<ul class="simple">
+<li>Switch to Object Mode</li>
+<li>Delete the cube</li>
+<li>Add a torus</li>
+</ul>
+<div class="figure" id="id7">
+<a class="reference internal image-reference" href="../_images/add-torus.png"><img alt="../_images/add-torus.png" src="../_images/add-torus.png" style="width: 200px;" /></a>
+<p class="caption"><span class="caption-text">New torus</span></p>
+</div>
+<ul class="simple">
+<li>With the torus selected, switch to Edit Mode</li>
+</ul>
+<div class="figure" id="id8">
+<a class="reference internal image-reference" href="../_images/edit-torus.png"><img alt="../_images/edit-torus.png" src="../_images/edit-torus.png" style="width: 200px;" /></a>
+<p class="caption"><span class="caption-text">Torus in Edit Mode</span></p>
+</div>
+<ul class="simple">
 <li>Deselect all</li>
-<li>Switch to front view</li>
+</ul>
+<div class="figure" id="id9">
+<a class="reference internal image-reference" href="../_images/torus-deselect.png"><img alt="../_images/torus-deselect.png" src="../_images/torus-deselect.png" style="width: 200px;" /></a>
+<p class="caption"><span class="caption-text">All vertices deselected</span></p>
+</div>
+<ul class="simple">
+<li>Switch to front orthographic view (<code class="kbd docutils literal"><span class="pre">Numpad1</span></code>, <code class="kbd docutils literal"><span class="pre">Numpad5</span></code>)</li>
+</ul>
+<div class="figure" id="id10">
+<a class="reference internal image-reference" href="../_images/torus-front-ortho.png"><img alt="../_images/torus-front-ortho.png" src="../_images/torus-front-ortho.png" style="width: 250px;" /></a>
+<p class="caption"><span class="caption-text">Front ortho view</span></p>
+</div>
+<ul class="simple">
 <li>Using <code class="kbd docutils literal"><span class="pre">B</span></code>, select all vertices</li>
+</ul>
+<div class="figure" id="id11">
+<a class="reference internal image-reference" href="../_images/torus-front-selected.png"><img alt="../_images/torus-front-selected.png" src="../_images/torus-front-selected.png" style="width: 250px;" /></a>
+<p class="caption"><span class="caption-text">Selected vertices with <code class="kbd docutils literal"><span class="pre">B</span></code></span></p>
+</div>
+<ul class="simple">
 <li>Rotate the view with <code class="kbd docutils literal"><span class="pre">MMB</span></code>. Which vertices were selected? Why?</li>
+</ul>
+<div class="figure" id="id12">
+<a class="reference internal image-reference" href="../_images/torus-front-selected-rotated.png"><img alt="../_images/torus-front-selected-rotated.png" src="../_images/torus-front-selected-rotated.png" style="width: 250px;" /></a>
+<p class="caption"><span class="caption-text">Rotated view</span></p>
+</div>
+<ul class="simple">
 <li>Switch to wireframe view (<code class="kbd docutils literal"><span class="pre">Z</span></code>)</li>
+</ul>
+<div class="figure" id="id13">
+<a class="reference internal image-reference" href="../_images/torus-wireframe.png"><img alt="../_images/torus-wireframe.png" src="../_images/torus-wireframe.png" style="width: 250px;" /></a>
+<p class="caption"><span class="caption-text">Wireframe mode</span></p>
+</div>
+<ul class="simple">
 <li>Deselect all again</li>
 <li>Switch to front view again</li>
 <li>Using <code class="kbd docutils literal"><span class="pre">B</span></code>, select all vertices again</li>
-<li>Rotate view again, which were selected?</li>
+</ul>
+<div class="figure" id="id14">
+<a class="reference internal image-reference" href="../_images/torus-wireframe-selected.png"><img alt="../_images/torus-wireframe-selected.png" src="../_images/torus-wireframe-selected.png" style="width: 250px;" /></a>
+<p class="caption"><span class="caption-text">Front view after using <code class="kbd docutils literal"><span class="pre">B</span></code> to select in wireframe mode.</span></p>
+</div>
+<ul class="last simple">
+<li>Rotate view again &#8211; what happened this time?</li>
 </ul>
 </div>
 </div>
-<div class="section" id="vertices-edges-faces">
-<h2>Vertices, edges, faces<a class="headerlink" href="#vertices-edges-faces" title="Permalink to this headline">¶</a></h2>
-<p>A mesh is made up of individual <strong>vertices</strong>. These are connected by <strong>edges</strong>.
-Edges can be connected together to create <strong>faces</strong>.</p>
+<div class="section" id="making-and-filling-holes">
+<h2>Making and filling holes<a class="headerlink" href="#making-and-filling-holes" title="Permalink to this headline">¶</a></h2>
 <div class="exercise admonition">
 <p class="first admonition-title">Exercise</p>
-<ul class="last simple">
+<ul class="simple">
 <li>Switch to Edit Mode on the torus</li>
-<li>Select a single vertex</li>
-<li>Add another vertex to the selection: the highlighted line is an edge.</li>
-<li>Select the adjacent two other vertices to complete the selection of a face.</li>
-<li>Deselect all</li>
-<li>Select a single vertex and delete it (<code class="kbd docutils literal"><span class="pre">X</span></code>, <span class="menuselection">‣ Vertex</span>)</li>
-<li>Elsewhere on the torus, select a single edge and delete it (<code class="kbd docutils literal"><span class="pre">X</span></code>, <span class="menuselection">‣ Edge</span>)</li>
-<li>Elsewhere still, select a face and delete it (<code class="kbd docutils literal"><span class="pre">X</span></code>, <span class="menuselection">‣ Face</span>)</li>
-<li>Elsewhere again, select several adjacent faces and delete just the faces
-(<code class="kbd docutils literal"><span class="pre">X</span></code>, <span class="menuselection">‣ Only Faces</span>)</li>
+<li>Switch to solid view (<code class="kbd docutils literal"><span class="pre">Z</span></code>)</li>
+<li>Select a single vertex and delete it (<code class="kbd docutils literal"><span class="pre">X</span></code>, <span class="menuselection">‣ Vertices</span>)</li>
 </ul>
+<div class="figure" id="id15">
+<a class="reference internal image-reference" href="../_images/torus-delete-vertex.png"><img alt="../_images/torus-delete-vertex.png" src="../_images/torus-delete-vertex.png" style="width: 250px;" /></a>
+<p class="caption"><span class="caption-text">Deleting a single vertex also removes the edges and faces it&#8217;s part of</span></p>
+</div>
+<ul class="simple">
+<li>Elsewhere on the torus, select a single edge and delete it (<code class="kbd docutils literal"><span class="pre">X</span></code>, <span class="menuselection">‣ Edges</span>)</li>
+</ul>
+<div class="figure" id="id16">
+<a class="reference internal image-reference" href="../_images/torus-delete-edge.png"><img alt="../_images/torus-delete-edge.png" src="../_images/torus-delete-edge.png" style="width: 250px;" /></a>
+<p class="caption"><span class="caption-text">Deleting an edge also removes the faces it&#8217;s part of, but doesn&#8217;t
+remove the vertices that make it up.</span></p>
+</div>
+<ul class="simple">
+<li>Elsewhere still, select a face and delete it (<code class="kbd docutils literal"><span class="pre">X</span></code>, <span class="menuselection">‣ Face</span>)</li>
+</ul>
+<div class="last figure" id="id17">
+<a class="reference internal image-reference" href="../_images/torus-delete-face.png"><img alt="../_images/torus-delete-face.png" src="../_images/torus-delete-face.png" style="width: 250px;" /></a>
+<p class="caption"><span class="caption-text">Deleting a face does not affect edges or vertices. The vertices that
+made up the face have been re-selected to better show the hole</span></p>
+</div>
 </div>
 </div>
 <div class="section" id="filling-in-edges-and-faces">
@@ -247,11 +338,30 @@ but these can cause issues when exporting for 3D printing.</p>
 <div class="exercise admonition">
 <p class="first admonition-title">Exercise</p>
 <ul class="simple">
-<li>Patch the smallest hole created above by creating a face (select the 4 vertices, <code class="kbd docutils literal"><span class="pre">F</span></code> to fill)</li>
+<li>Patch the smallest hole created above by creating a face (select the
+4 vertices, <code class="kbd docutils literal"><span class="pre">F</span></code> to fill)</li>
+</ul>
+<div class="figure" id="id18">
+<a class="reference internal image-reference" href="../_images/torus-patched-face.png"><img alt="../_images/torus-patched-face.png" src="../_images/torus-patched-face.png" style="width: 250px;" /></a>
+<p class="caption"><span class="caption-text">Patched hole created by deleting face</span></p>
+</div>
+<ul class="simple">
 <li>Patch the second-smallest hole from above, but first create an edge in the
 middle (select 2 vertices, <code class="kbd docutils literal"><span class="pre">F</span></code>), separating the hole into two small
-quads. Then create new faces.</li>
+quads.</li>
 </ul>
+<div class="figure" id="id19">
+<a class="reference internal image-reference" href="../_images/torus-patched-edge-1.png"><img alt="../_images/torus-patched-edge-1.png" src="../_images/torus-patched-edge-1.png" style="width: 250px;" /></a>
+<p class="caption"><span class="caption-text">Added a new edge</span></p>
+</div>
+<ul class="simple">
+<li>Then create new faces on either side by selecting all 6 vertices and
+hitting <code class="kbd docutils literal"><span class="pre">F</span></code>.</li>
+</ul>
+<div class="figure" id="id20">
+<a class="reference internal image-reference" href="../_images/torus-patched-edge-2.png"><img alt="../_images/torus-patched-edge-2.png" src="../_images/torus-patched-edge-2.png" style="width: 250px;" /></a>
+<p class="caption"><span class="caption-text">Added new faces</span></p>
+</div>
 <div class="last admonition note">
 <p class="first admonition-title">Note</p>
 <ul class="last simple">

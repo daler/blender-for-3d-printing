@@ -73,6 +73,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../interface/3d-cursor.html">3D Cursor</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../interface/spacebar.html">Spacebar</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../interface/transforms.html">Transformations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../interface/cheatsheet-interface.html">Interface cheatsheet</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Mesh modeling</a><ul class="current">
@@ -149,12 +150,41 @@
 <ul class="simple">
 <li>Patch the large hole in the torus: select a single vertex and extrude it
 into the middle of the hole (<code class="kbd docutils literal"><span class="pre">E</span></code>)</li>
+</ul>
+<div class="figure" id="id1">
+<a class="reference internal image-reference" href="../_images/torus-extruded-vertex.png"><img alt="../_images/torus-extruded-vertex.png" src="../_images/torus-extruded-vertex.png" style="width: 250px;" /></a>
+<p class="caption"><span class="caption-text">A single vertex extruded. Notice the new vertex (selected) already has
+an edge connecting it to the original vertex.</span></p>
+</div>
+<ul class="simple">
 <li>Position the vertex &#8211; you may need to move around a bit to get a good
 view, and possibly use wireframe mode (<code class="kbd docutils literal"><span class="pre">Z</span></code>).</li>
-<li>Fill the hole with faces (<code class="kbd docutils literal"><span class="pre">F</span></code>)</li>
 </ul>
-<p class="last">In this case, to get a perfect positioning, we&#8217;d have to do the math to
-figure out the position based on the radius of the circle</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">If we wanted to get perfect positioning, we&#8217;d have to do the math to
+figure out the X, Y, Z position based on the radius of the circle and
+then enter those coordinates in the Properties shelf.</p>
+</div>
+<ul class="simple">
+<li>Fill the hole by first creating the additional edges (<code class="kbd docutils literal"><span class="pre">F</span></code>), then
+filling the faces.</li>
+</ul>
+<div class="figure">
+<a class="reference internal image-reference" href="../_images/torus-fill-1.png"><img alt="../_images/torus-fill-1.png" src="../_images/torus-fill-1.png" style="width: 250px;" /></a>
+</div>
+<div class="figure">
+<a class="reference internal image-reference" href="../_images/torus-fill-2.png"><img alt="../_images/torus-fill-2.png" src="../_images/torus-fill-2.png" style="width: 250px;" /></a>
+</div>
+<div class="figure">
+<a class="reference internal image-reference" href="../_images/torus-fill-3.png"><img alt="../_images/torus-fill-3.png" src="../_images/torus-fill-3.png" style="width: 250px;" /></a>
+</div>
+<div class="figure">
+<a class="reference internal image-reference" href="../_images/torus-fill-4.png"><img alt="../_images/torus-fill-4.png" src="../_images/torus-fill-4.png" style="width: 250px;" /></a>
+</div>
+<div class="last figure">
+<a class="reference internal image-reference" href="../_images/torus-fill-5.png"><img alt="../_images/torus-fill-5.png" src="../_images/torus-fill-5.png" style="width: 250px;" /></a>
+</div>
 </div>
 <div class="exercise admonition">
 <p class="first admonition-title">Exercise</p>

@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Interface &mdash; Blender for 3D Printing</title>
+  <title>Interface cheatsheet &mdash; Blender for 3D Printing</title>
   
 
   
@@ -33,8 +33,9 @@
 
   
     <link rel="top" title="Blender for 3D Printing" href="../index.html"/>
-        <link rel="next" title="Navigate the 3D View" href="navigation.html"/>
-        <link rel="prev" title="Blender for 3D Printing" href="../contents.html"/> 
+        <link rel="up" title="Interface" href="index.html"/>
+        <link rel="next" title="Mesh modeling" href="../mesh_modeling/index.html"/>
+        <link rel="prev" title="Transformations" href="transforms.html"/> 
 
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
@@ -66,13 +67,13 @@
           
           
               <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="">Interface</a><ul>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Interface</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="navigation.html">Navigate the 3D View</a></li>
 <li class="toctree-l2"><a class="reference internal" href="selection.html">Selecting</a></li>
 <li class="toctree-l2"><a class="reference internal" href="3d-cursor.html">3D Cursor</a></li>
 <li class="toctree-l2"><a class="reference internal" href="spacebar.html">Spacebar</a></li>
 <li class="toctree-l2"><a class="reference internal" href="transforms.html">Transformations</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cheatsheet-interface.html">Interface cheatsheet</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Interface cheatsheet</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../mesh_modeling/index.html">Mesh modeling</a><ul>
@@ -109,10 +110,12 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../contents.html">Docs</a> &raquo;</li>
       
-    <li>Interface</li>
+          <li><a href="index.html">Interface</a> &raquo;</li>
+      
+    <li>Interface cheatsheet</li>
       <li class="wy-breadcrumbs-aside">
         
-          <a href="../_sources/interface/index.txt" rel="nofollow"> View page source</a>
+          <a href="../_sources/interface/cheatsheet-interface.txt" rel="nofollow"> View page source</a>
         
       </li>
   </ul>
@@ -120,61 +123,85 @@
 </div>
           <div role="main" class="document">
             
-  <div class="section" id="interface">
-<span id="blender-for-3d-printing-index"></span><h1>Interface<a class="headerlink" href="#interface" title="Permalink to this headline">¶</a></h1>
-<p>Blender is designed for efficiency and usability rather than for learning, so
-it can have a steep learning curve. This section incrementally walks through
-the basics of the interface and manipulating 3D objects.</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="navigation.html">Navigate the 3D View</a></li>
-<li class="toctree-l1"><a class="reference internal" href="selection.html">Selecting</a></li>
-<li class="toctree-l1"><a class="reference internal" href="3d-cursor.html">3D Cursor</a></li>
-<li class="toctree-l1"><a class="reference internal" href="spacebar.html">Spacebar</a></li>
-<li class="toctree-l1"><a class="reference internal" href="transforms.html">Transformations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="cheatsheet-interface.html">Interface cheatsheet</a></li>
-</ul>
-</div>
-<p>After starting Blender and clicking to dismiss the splash screen, we see this
-default interface:</p>
-<div class="figure align-center">
-<img alt="../_images/start.png" src="../_images/start.png" />
-</div>
-<p>Here&#8217;s an annotated version of the default layout:</p>
-<div class="figure" id="id2">
-<img alt="../_images/annotated-layout.png" src="../_images/annotated-layout.png" />
-<p class="caption"><span class="caption-text">Blender&#8217;s default layout</span></p>
-</div>
-<dl class="docutils">
-<dt>Info</dt>
-<dd>Standard menus like <span class="menuselection">File ‣ Save</span></dd>
-<dt>3D View</dt>
-<dd>Most of our work will happen in here. This is where objects are created and manipulated.</dd>
-<dt>Tool Shelf</dt>
-<dd>Contains recently-used tools and context-dependent options.</dd>
-<dt>Outliner</dt>
-<dd>Used for complex scenes; we can ignore for now.</dd>
-<dt>Properties</dt>
-<dd>Many settings can be found among these panels</dd>
-<dt>Animation timeline</dt>
-<dd>Used for animation; we can ignore for now.</dd>
-</dl>
-<p>To make learning a little easier, we&#8217;re going to make some tweaks to the user
-interface.</p>
-<p>Go to <span class="menuselection">File ‣ User Preferences</span> and click on the
-<span class="menuselection">Interface</span> tab. Click the checkboxes for <cite>Auto Depth</cite> and
-<cite>Rotate Around Selection</cite>. These will make manipulating the 3D View more
-straightforward.</p>
-<div class="figure" id="id3">
-<img alt="../_images/user-prefs-interface.png" src="../_images/user-prefs-interface.png" />
-<p class="caption"><span class="caption-text">Make sure <cite>Auto Depth</cite> and <cite>Rotate Around Selection</cite> are checked in the
-middle column.</span></p>
-</div>
-<div class="admonition seealso">
-<p class="first admonition-title">See also</p>
-<p class="last">The Blender manual on the <a class="reference external" href="https://www.blender.org/manual/interface/index.html#interface">Interface</a> has
-details about sections of the interface.</p>
-</div>
+  <div class="section" id="interface-cheatsheet">
+<h1>Interface cheatsheet<a class="headerlink" href="#interface-cheatsheet" title="Permalink to this headline">¶</a></h1>
+<p>Here are the commands so far:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="32%" />
+<col width="68%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Action</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="kbd docutils literal"><span class="pre">RMB</span></code></td>
+<td>Select an object</td>
+</tr>
+<tr class="row-odd"><td><code class="kbd docutils literal"><span class="pre">Shift-RMB</span></code></td>
+<td>Add another object to the selection</td>
+</tr>
+<tr class="row-even"><td><code class="kbd docutils literal"><span class="pre">A</span></code></td>
+<td>Toggle the selection of all objects</td>
+</tr>
+<tr class="row-odd"><td><code class="kbd docutils literal"><span class="pre">Del</span></code> or <code class="kbd docutils literal"><span class="pre">X</span></code></td>
+<td>Delete an object from the scene</td>
+</tr>
+<tr class="row-even"><td><code class="kbd docutils literal"><span class="pre">Space</span></code></td>
+<td>Shows the search bar menu</td>
+</tr>
+<tr class="row-odd"><td><code class="kbd docutils literal"><span class="pre">Ctrl-Z</span></code></td>
+<td>Undo last action</td>
+</tr>
+<tr class="row-even"><td><code class="kbd docutils literal"><span class="pre">Ctrl-Shift-Z</span></code></td>
+<td>Redo last undo</td>
+</tr>
+<tr class="row-odd"><td><code class="kbd docutils literal"><span class="pre">LMB</span></code></td>
+<td>Place the 3D cursor under the mouse cursor</td>
+</tr>
+<tr class="row-even"><td><code class="kbd docutils literal"><span class="pre">Shift-S</span></code></td>
+<td>Snap menu</td>
+</tr>
+<tr class="row-odd"><td><code class="kbd docutils literal"><span class="pre">MMB</span></code></td>
+<td>Rotate the view</td>
+</tr>
+<tr class="row-even"><td><code class="kbd docutils literal"><span class="pre">Shift-MMB</span></code></td>
+<td>Pan the view</td>
+</tr>
+<tr class="row-odd"><td><code class="kbd docutils literal"><span class="pre">Ctrl-MMB</span></code>/<code class="kbd docutils literal"><span class="pre">Wheel</span></code></td>
+<td>Zoom the view</td>
+</tr>
+<tr class="row-even"><td><code class="kbd docutils literal"><span class="pre">Numpad7</span></code></td>
+<td>Snap to top view</td>
+</tr>
+<tr class="row-odd"><td><code class="kbd docutils literal"><span class="pre">Numpad1</span></code></td>
+<td>Snap to view from the front</td>
+</tr>
+<tr class="row-even"><td><code class="kbd docutils literal"><span class="pre">Numpad3</span></code></td>
+<td>Snap to view from the right</td>
+</tr>
+<tr class="row-odd"><td><code class="kbd docutils literal"><span class="pre">Numpad5</span></code></td>
+<td>Swap between orthographic and perspective views</td>
+</tr>
+<tr class="row-even"><td><code class="kbd docutils literal"><span class="pre">Numpad9</span></code></td>
+<td>Swap (switches between top/bottom or left/right)</td>
+</tr>
+<tr class="row-odd"><td><code class="kbd docutils literal"><span class="pre">G</span></code></td>
+<td>Grab (move, translate)</td>
+</tr>
+<tr class="row-even"><td><code class="kbd docutils literal"><span class="pre">S</span></code></td>
+<td>Scale (resize)</td>
+</tr>
+<tr class="row-odd"><td><code class="kbd docutils literal"><span class="pre">R</span></code></td>
+<td>Rotate</td>
+</tr>
+<tr class="row-even"><td><code class="kbd docutils literal"><span class="pre">LMB</span></code></td>
+<td>Confirm transformation</td>
+</tr>
+</tbody>
+</table>
 </div>
 
 
@@ -183,10 +210,10 @@ details about sections of the interface.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="navigation.html" class="btn btn-neutral float-right" title="Navigate the 3D View">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../mesh_modeling/index.html" class="btn btn-neutral float-right" title="Mesh modeling">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../contents.html" class="btn btn-neutral" title="Blender for 3D Printing"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="transforms.html" class="btn btn-neutral" title="Transformations"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
