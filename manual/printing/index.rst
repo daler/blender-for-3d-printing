@@ -1,8 +1,15 @@
+.. _printing:
+
 Printing
 ========
 
 .. toctree::
     :maxdepth: 2
 
-    quads-tris-export.rst
+    export-stl.rst
+    concepts.rst
     3d-print-toolbox.rst
+    import-stl.rst
+    mesh-problems.rst
+    checklist-and-examples.rst
+
