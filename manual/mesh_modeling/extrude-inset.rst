@@ -54,16 +54,19 @@ Action                                              Description
 .. admonition:: Exercise
     :class: exercise
 
-    The goal here is to make a rough USB thumb drive shape . . .
+    To demonstrate extruding and insetting the goal here is to make an "L"
+    shape with an inset cup. A paperclip holder maybe?
 
     * Back in Object mode, delete the torus.
+    * Snap the cursor to the center (0, 0, 0)
     * Add a cube
-    * Flatten along Z into the rough thickness of a thumb drive
     * Switch to Edit Mode
-    * Select the front face of the cube (now more of a rectangular prism...)
-    * Extrude the face out to make the "handle" part (:kbd:`E`, move mouse,
-      :kbd:`LMB` to confirm)
-    * With the extruded face selected, inset it a bit (:kbd:`I`)
-    * With the inset face selected, extrude it to make the outside of the USB connector
-    * With the new extruded face selected, inset a bit.
-    * Extrude the new inset face *backwards* to make the socket part of the connector.
+    * Select the top face and extrude upwards (:kbd:`E`, :kbd:`LMB` to confirm,
+      :kbd:`RMB` to cancel)
+    * Select one of the side faces and extrude it sideways to make the bottom
+      of the "L".
+    * Select the top face of the bottom of the "L" you just extruded
+    * Use :kbd:`I` to inset the face a bit
+    * Move the inset face downward to create an indentation
+
+
