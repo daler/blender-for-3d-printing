@@ -16,17 +16,18 @@ the basics of the interface and manipulating 3D objects.
     3d-cursor.rst
     spacebar.rst
     transforms.rst
+    cheatsheet-interface.rst
 
 
 After starting Blender and clicking to dismiss the splash screen, we see this
 default interface:
 
-.. figure:: /images/001.png
+.. figure:: /images/start.png
    :align: center
 
 Here's an annotated version of the default layout:
 
-.. figure:: /images/003.png
+.. figure:: /images/annotated-layout.png
 
    Blender's default layout
 
@@ -49,6 +50,20 @@ Properties
 
 Animation timeline
     Used for animation; we can ignore for now.
+
+
+To make learning a little easier, we're going to make some tweaks to the user
+interface.
+
+Go to :menuselection:`File --> User Preferences` and click on the
+:menuselection:`Interface` tab. Click the checkboxes for `Auto Depth` and
+`Rotate Around Selection`. These will make manipulating the 3D View more
+straightforward.
+
+.. figure:: /images/user-prefs-interface.png
+
+    Make sure `Auto Depth` and `Rotate Around Selection` are checked in the
+    middle column.
 
 .. seealso::
 

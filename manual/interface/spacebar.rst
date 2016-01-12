@@ -16,21 +16,19 @@ Action                  Description
 .. admonition:: Exercise
     :class: exercise
 
-    * Zoom out and move the 3D Cursor somewhere away from the cube
+    * Zoom out and move the 3D Cursor away from the cube
 
     * Add a monkey (:kbd:`Space`, then start typing "monkey")
 
-    * Align the monkey with the cube, using either :kbd:`Shift-S` or
-      :kbd:`Space` :menuselection:`--> Snap` to snap. Specifically:
-
-        * snap 3D Cursor to cube
-        * snap monkey to 3D Cursor
-
-    * Delete the monkey
-
     * :kbd:`Space`, then start typing "add". What other kinds of things can you
-      add?
+      add? Try some out.
 
     * :kbd:`Space`, then start typing some commands you already know: Try
       "delete" and "undo". Notice the hotkey it shows -- this is one way of
       quickly remembering a hotkey.
+
+    * Clean up the scene: Select All, then Delete. Use either :kbd:`Space` or
+      :kbd:`A`, :kbd:`X`.
+
+    * Snap the cursor to the center and add a cube to get ready for the next
+      exercise.

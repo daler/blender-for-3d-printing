@@ -15,12 +15,41 @@ Action                                              Description
 
     * Patch the large hole in the torus: select a single vertex and extrude it
       into the middle of the hole (:kbd:`E`)
+
+    .. figure:: /images/torus-extruded-vertex.png
+        :width: 250px
+
+        A single vertex extruded. Notice the new vertex (selected) already has
+        an edge connecting it to the original vertex.
+
     * Position the vertex -- you may need to move around a bit to get a good
       view, and possibly use wireframe mode (:kbd:`Z`).
-    * Fill the hole with faces (:kbd:`F`)
 
-    In this case, to get a perfect positioning, we'd have to do the math to
-    figure out the position based on the radius of the circle
+    .. note:: 
+
+        If we wanted to get perfect positioning, we'd have to do the math to
+        figure out the X, Y, Z position based on the radius of the circle and
+        then enter those coordinates in the Properties shelf.
+
+    * Fill the hole by first creating the additional edges (:kbd:`F`), then
+      filling the faces.
+
+    .. figure:: /images/torus-fill-1.png
+        :width: 250px
+
+    .. figure:: /images/torus-fill-2.png
+        :width: 250px
+
+
+    .. figure:: /images/torus-fill-3.png
+        :width: 250px
+
+
+    .. figure:: /images/torus-fill-4.png
+        :width: 250px
+
+    .. figure:: /images/torus-fill-5.png
+        :width: 250px
 
 .. admonition:: Exercise
     :class: exercise

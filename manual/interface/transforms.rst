@@ -18,9 +18,7 @@ Action                  Description
 
     * Move, rotate, scale the cube to get used to the controls
 
-        * Note where your mouse cursor is when you initiate a transform.
-
-        * Note the changing numbers in the lower left corner of the 3D View
+    * Note the changing numbers in the lower left corner of the 3D View
 
     * Use :kbd:`Ctrl-Z` to undo and get the cube back to the origin.
 
@@ -49,6 +47,11 @@ Action                                              Description
     * Move the cube back 5 units (:kbd:`G`, :kbd:`Y`, hold :kbd:`Ctrl` and pay
       attention to the numbers at the bottom left)
 
+    .. figure:: /images/stretched-cube-back-5.png
+
+        The stretched cube, in the process of being moved back in the
+        Y direction 5 units.
+
 
 Type numbers to be more precise
 -------------------------------
@@ -65,6 +68,11 @@ Action                                                       Description
     :class: exercise
 
     * Rotate the cube by 45 degrees along the Y axis
+
+    .. figure:: /images/stretched-cube-rotated.png
+        :width: 50%
+
+        The stretched cube, in the process of being rotated 45 degrees
 
 
 Properties shelf
@@ -85,6 +93,13 @@ Action                                              Description
     * Using the Properties Shelf, reset the cube to its original location (0,
       0, 0), rotation (0, 0, 0), and scale (1, 1, 1) 
 
+    .. figure:: /images/nkey-before.png
+
+        Properties before resetting transforms
+
+    .. figure:: /images/nkey-after.png
+
+        Properties after resetting transforms
 
 
 .. seealso::
