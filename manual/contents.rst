@@ -13,15 +13,15 @@ sequentially, and build upon one another.
 
 The tutorial is divided into three sections:
 
-Interface
+:ref:`the_interface`
     Helps you get familiar with the interface; shows how to manipulate 3D
     objects in Blender
 
-Mesh Modeling
+:ref:`mesh_modeling`
     Describes concepts and demonstrates tools for adding and changing mesh
     geometry
 
-Printing
+:ref:`printing`
     Practical guidelines and tips for a successful 3D print
 
 Copyright 2016 Ryan Dale
@@ -46,3 +46,4 @@ Sections
    interface/index.rst
    mesh_modeling/index.rst
    printing/index.rst
+   next-steps/index.rst
