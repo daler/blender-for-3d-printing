@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>3D Print Toolbox &mdash; Blender for 3D Printing</title>
+  <title>Exporting to STL &mdash; Blender for 3D Printing</title>
   
 
   
@@ -34,8 +34,8 @@
   
     <link rel="top" title="Blender for 3D Printing" href="../index.html"/>
         <link rel="up" title="Printing" href="index.html"/>
-        <link rel="next" title="Importing STLs" href="import-stl.html"/>
-        <link rel="prev" title="3D Printing background" href="concepts.html"/> 
+        <link rel="next" title="3D Printing background" href="concepts.html"/>
+        <link rel="prev" title="Printing" href="index.html"/> 
 
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
@@ -83,9 +83,9 @@
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Printing</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="export-stl.html">Exporting to STL</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Exporting to STL</a></li>
 <li class="toctree-l2"><a class="reference internal" href="concepts.html">3D Printing background</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">3D Print Toolbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3d-print-toolbox.html">3D Print Toolbox</a></li>
 <li class="toctree-l2"><a class="reference internal" href="import-stl.html">Importing STLs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="mesh-problems.html">Mesh problems and solutions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="checklist-and-examples.html">Checklist and examples</a></li>
@@ -121,10 +121,10 @@
       
           <li><a href="index.html">Printing</a> &raquo;</li>
       
-    <li>3D Print Toolbox</li>
+    <li>Exporting to STL</li>
       <li class="wy-breadcrumbs-aside">
         
-          <a href="../_sources/printing/3d-print-toolbox.txt" rel="nofollow"> View page source</a>
+          <a href="../_sources/printing/export-stl.txt" rel="nofollow"> View page source</a>
         
       </li>
   </ul>
@@ -132,33 +132,43 @@
 </div>
           <div role="main" class="document">
             
-  <div class="section" id="d-print-toolbox">
-<h1>3D Print Toolbox<a class="headerlink" href="#d-print-toolbox" title="Permalink to this headline">¶</a></h1>
-<p>Blender has many available <strong>Add-ons</strong> or plugins. By default, not all are
-pre-loaded. One of these is the 3D Print Toolbox, which we have to enable.</p>
-<ul class="simple">
-<li><span class="menuselection">File ‣ User Preferences</span> (or <code class="kbd docutils literal"><span class="pre">Ctrl-Alt-U</span></code>) to open the
-User Preferences menu.</li>
-<li>In the <span class="menuselection">Add-ons</span> tab, start typing <cite>3d print</cite> into the search
-bar. Once the &#8220;Mesh: 3D Print Toolbox&#8221; shows up, click the checkbox on the far
-right to enable this add-on.</li>
+  <div class="section" id="exporting-to-stl">
+<h1>Exporting to STL<a class="headerlink" href="#exporting-to-stl" title="Permalink to this headline">¶</a></h1>
+<p>Blender can export to STL, which is a fairly standard file format for 3D
+printing. This section demonstrates the changes that occur to a mesh when
+exporting and re-importing an STL</p>
+<div class="exercise admonition">
+<p class="first admonition-title">Exercise</p>
+<ul class="last simple">
+<li>Either save your existing work as a <cite>.blend</cite> file (<span class="menuselection">File
+‣ Save</span>) or load this example</li>
+<li>Export to STL using <span class="menuselection">File ‣ Export ‣ Stl</span></li>
+<li>Select a filename and location</li>
+<li>Click the <span class="menuselection">Export STL</span> button</li>
+<li>Import the just-exported STL: (<span class="menuselection">File ‣ Import ‣ Stl</span>).</li>
+<li>The new object came in right on top of the existing one, so select it and
+move it out of the way.</li>
+<li>Switch to Edit Mode after selecting the original and the newly imported
+version: what&#8217;s different?</li>
 </ul>
-<div class="figure" id="id1">
-<a class="reference internal image-reference" href="../_images/user_preferences_3dprint.png"><img alt="../_images/user_preferences_3dprint.png" src="../_images/user_preferences_3dprint.png" style="width: 75%;" /></a>
-<p class="caption"><span class="caption-text"><span class="menuselection">File ‣ User Preferences ‣ &#8220;Add-ons&#8221; Tab</span>. Check the box
-on the far right to enable</span></p>
 </div>
-<ul class="simple">
-<li>Close the User Preferences window.</li>
-<li>In the Tool Shelf, there should be a new <cite>3D Printing</cite> tab.</li>
+<p>Many algorithms for working with 3D objects operate on triangles &#8211; in
+particular those used for slicing models for printing. The STL format works in
+triangles (<strong>tris</strong>), but we were modeling in <strong>quads</strong>. Exporting an STL
+implicitly triangulated all faces.</p>
+<div class="exercise admonition">
+<p class="first admonition-title">Exercise</p>
+<ul class="last simple">
+<li>In Edit Mode, select all faces</li>
+<li>Convert tris to quads (<code class="kbd docutils literal"><span class="pre">Ctrl-J</span></code>, or <code class="kbd docutils literal"><span class="pre">Space</span></code> and search for
+&#8220;tris to quads&#8221;)</li>
+<li>Note that some faces (the inset ones) may not be converted to quads &#8211;
+the algorithm is not perfect. To fix this, we could delete the edges and
+use <code class="kbd docutils literal"><span class="pre">F</span></code> to re-fill the faces as quads. We might have to do this if
+we imported someone else&#8217;s STL. In practice, it&#8217;s better to save the
+original .blend file for modifiying.</li>
 </ul>
-<div class="figure" id="id2">
-<img alt="../_images/3dprint-toolbox.png" src="../_images/3dprint-toolbox.png" />
-<p class="caption"><span class="caption-text">The newly available 3D Printing toolbox</span></p>
 </div>
-<p>Understanding the options in the 3D Print Toolbox requires knowing about
-problems that can occur in printing. Understanding those problems requires
-knowing about the process of 3D printing.</p>
 </div>
 
 
@@ -167,10 +177,10 @@ knowing about the process of 3D printing.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="import-stl.html" class="btn btn-neutral float-right" title="Importing STLs">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="concepts.html" class="btn btn-neutral float-right" title="3D Printing background">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="concepts.html" class="btn btn-neutral" title="3D Printing background"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="index.html" class="btn btn-neutral" title="Printing"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

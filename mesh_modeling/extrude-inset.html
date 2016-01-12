@@ -34,7 +34,7 @@
   
     <link rel="top" title="Blender for 3D Printing" href="../index.html"/>
         <link rel="up" title="Mesh modeling" href="index.html"/>
-        <link rel="next" title="Printing" href="../printing/index.html"/>
+        <link rel="next" title="Object origin" href="object-origin.html"/>
         <link rel="prev" title="Mesh concepts" href="mesh-concepts.html"/> 
 
   
@@ -79,11 +79,20 @@
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Mesh modeling</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="mesh-concepts.html">Mesh concepts</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="">Extrude and inset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="object-origin.html">Object origin</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../printing/index.html">Printing</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../printing/quads-tris-export.html">Exporting to STL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../printing/export-stl.html">Exporting to STL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../printing/concepts.html">3D Printing background</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../printing/3d-print-toolbox.html">3D Print Toolbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../printing/import-stl.html">Importing STLs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../printing/mesh-problems.html">Mesh problems and solutions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../printing/checklist-and-examples.html">Checklist and examples</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../next-steps/index.html">Next steps</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../next-steps/index.html#cheatsheets">Cheatsheets</a></li>
 </ul>
 </li>
 </ul>
@@ -188,19 +197,20 @@ filling the faces.</li>
 </div>
 <div class="exercise admonition">
 <p class="first admonition-title">Exercise</p>
-<p>The goal here is to make a rough USB thumb drive shape . . .</p>
+<p>To demonstrate extruding and insetting the goal here is to make an &#8220;L&#8221;
+shape with an inset cup. A paperclip holder maybe?</p>
 <ul class="last simple">
 <li>Back in Object mode, delete the torus.</li>
+<li>Snap the cursor to the center (0, 0, 0)</li>
 <li>Add a cube</li>
-<li>Flatten along Z into the rough thickness of a thumb drive</li>
 <li>Switch to Edit Mode</li>
-<li>Select the front face of the cube (now more of a rectangular prism...)</li>
-<li>Extrude the face out to make the &#8220;handle&#8221; part (<code class="kbd docutils literal"><span class="pre">E</span></code>, move mouse,
-<code class="kbd docutils literal"><span class="pre">LMB</span></code> to confirm)</li>
-<li>With the extruded face selected, inset it a bit (<code class="kbd docutils literal"><span class="pre">I</span></code>)</li>
-<li>With the inset face selected, extrude it to make the outside of the USB connector</li>
-<li>With the new extruded face selected, inset a bit.</li>
-<li>Extrude the new inset face <em>backwards</em> to make the socket part of the connector.</li>
+<li>Select the top face and extrude upwards (<code class="kbd docutils literal"><span class="pre">E</span></code>, <code class="kbd docutils literal"><span class="pre">LMB</span></code> to confirm,
+<code class="kbd docutils literal"><span class="pre">RMB</span></code> to cancel)</li>
+<li>Select one of the side faces and extrude it sideways to make the bottom
+of the &#8220;L&#8221;.</li>
+<li>Select the top face of the bottom of the &#8220;L&#8221; you just extruded</li>
+<li>Use <code class="kbd docutils literal"><span class="pre">I</span></code> to inset the face a bit</li>
+<li>Move the inset face downward to create an indentation</li>
 </ul>
 </div>
 </div>
@@ -211,7 +221,7 @@ filling the faces.</li>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../printing/index.html" class="btn btn-neutral float-right" title="Printing">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="object-origin.html" class="btn btn-neutral float-right" title="Object origin">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="mesh-concepts.html" class="btn btn-neutral" title="Mesh concepts"><span class="fa fa-arrow-circle-left"></span> Previous</a>

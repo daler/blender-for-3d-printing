@@ -1,8 +1,7 @@
-.. _blender_for_3d_printing-index:
+.. _the_interface:
 
-########################
 Interface
-########################
+=========
 
 Blender is designed for efficiency and usability rather than for learning, so
 it can have a steep learning curve. This section incrementally walks through

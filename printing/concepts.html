@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>3D Print Toolbox &mdash; Blender for 3D Printing</title>
+  <title>3D Printing background &mdash; Blender for 3D Printing</title>
   
 
   
@@ -34,8 +34,8 @@
   
     <link rel="top" title="Blender for 3D Printing" href="../index.html"/>
         <link rel="up" title="Printing" href="index.html"/>
-        <link rel="next" title="Importing STLs" href="import-stl.html"/>
-        <link rel="prev" title="3D Printing background" href="concepts.html"/> 
+        <link rel="next" title="3D Print Toolbox" href="3d-print-toolbox.html"/>
+        <link rel="prev" title="Exporting to STL" href="export-stl.html"/> 
 
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
@@ -84,8 +84,8 @@
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Printing</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="export-stl.html">Exporting to STL</a></li>
-<li class="toctree-l2"><a class="reference internal" href="concepts.html">3D Printing background</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">3D Print Toolbox</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">3D Printing background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3d-print-toolbox.html">3D Print Toolbox</a></li>
 <li class="toctree-l2"><a class="reference internal" href="import-stl.html">Importing STLs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="mesh-problems.html">Mesh problems and solutions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="checklist-and-examples.html">Checklist and examples</a></li>
@@ -121,10 +121,10 @@
       
           <li><a href="index.html">Printing</a> &raquo;</li>
       
-    <li>3D Print Toolbox</li>
+    <li>3D Printing background</li>
       <li class="wy-breadcrumbs-aside">
         
-          <a href="../_sources/printing/3d-print-toolbox.txt" rel="nofollow"> View page source</a>
+          <a href="../_sources/printing/concepts.txt" rel="nofollow"> View page source</a>
         
       </li>
   </ul>
@@ -132,33 +132,62 @@
 </div>
           <div role="main" class="document">
             
-  <div class="section" id="d-print-toolbox">
-<h1>3D Print Toolbox<a class="headerlink" href="#d-print-toolbox" title="Permalink to this headline">¶</a></h1>
-<p>Blender has many available <strong>Add-ons</strong> or plugins. By default, not all are
-pre-loaded. One of these is the 3D Print Toolbox, which we have to enable.</p>
-<ul class="simple">
-<li><span class="menuselection">File ‣ User Preferences</span> (or <code class="kbd docutils literal"><span class="pre">Ctrl-Alt-U</span></code>) to open the
-User Preferences menu.</li>
-<li>In the <span class="menuselection">Add-ons</span> tab, start typing <cite>3d print</cite> into the search
-bar. Once the &#8220;Mesh: 3D Print Toolbox&#8221; shows up, click the checkbox on the far
-right to enable this add-on.</li>
-</ul>
-<div class="figure" id="id1">
-<a class="reference internal image-reference" href="../_images/user_preferences_3dprint.png"><img alt="../_images/user_preferences_3dprint.png" src="../_images/user_preferences_3dprint.png" style="width: 75%;" /></a>
-<p class="caption"><span class="caption-text"><span class="menuselection">File ‣ User Preferences ‣ &#8220;Add-ons&#8221; Tab</span>. Check the box
-on the far right to enable</span></p>
+  <div class="section" id="d-printing-background">
+<h1>3D Printing background<a class="headerlink" href="#d-printing-background" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="quick-background-on-3d-printing">
+<h2>Quick background on 3D Printing<a class="headerlink" href="#quick-background-on-3d-printing" title="Permalink to this headline">¶</a></h2>
+<p>There are different limitations for each method and each material, so you need
+to design for the method and material. Common methods:</p>
+<dl class="docutils">
+<dt>Fused Deposition Modeling</dt>
+<dd>Molten plastic extruded in thin layers. Most common hobbyist method.</dd>
+<dt>Stereolithography</dt>
+<dd>Bath of UV-curable resin; lasers cure one layer at a time on the surface.
+Can be high-resolution.</dd>
+<dt>Selective Laser Sintering</dt>
+<dd>High-powered laser selectively fuses thin layers of powdered material. Can
+do metals.</dd>
+<dt>Polyjet</dt>
+<dd>Photopolymers sprayed in thin layers and then cured with UV</dd>
+<dt>Binder jetting</dt>
+<dd>Deposit binder liquid to join powdered material. Can do ceramics.</dd>
+</dl>
 </div>
+<div class="section" id="design-notes">
+<h2>Design notes<a class="headerlink" href="#design-notes" title="Permalink to this headline">¶</a></h2>
+<p>In no particular order . . .</p>
 <ul class="simple">
-<li>Close the User Preferences window.</li>
-<li>In the Tool Shelf, there should be a new <cite>3D Printing</cite> tab.</li>
+<li>Build strength: FDM prints can be weak parallel to build plate (due to layers not fusing well)</li>
+<li>In general, avoid more than 45 degrees overhang without support; more than
+that you can get drooping.</li>
+<li>Minimum thickness of walls and features depends heavily on material and
+method</li>
+<li>Tolerance when exporting to STL: 0.01mm. Anything more and the file may be
+too big due to excessive detail that can&#8217;t be used by the printer</li>
+<li>Aim for a &#8220;watertight&#8221; mesh as in <a class="reference external" href="http://support.ponoko.com/entries/20217167-creating-watertight-meshes-for-3d-printing">this diagram</a>.</li>
+<li>If sintering and you have open space, don&#8217;t forget <a class="reference external" href="http://support.ponoko.com/entries/20952096-hollowing-out-your-design-to-reduce-3d-printing-costs">drain holes</a>.</li>
 </ul>
-<div class="figure" id="id2">
-<img alt="../_images/3dprint-toolbox.png" src="../_images/3dprint-toolbox.png" />
-<p class="caption"><span class="caption-text">The newly available 3D Printing toolbox</span></p>
 </div>
-<p>Understanding the options in the 3D Print Toolbox requires knowing about
-problems that can occur in printing. Understanding those problems requires
-knowing about the process of 3D printing.</p>
+<div class="section" id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+<p>The above was summarized from:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://i.materialise.com/blog/5-mistakes-to-avoid-when-designing-a-3d-model-for-3d-printing">https://i.materialise.com/blog/5-mistakes-to-avoid-when-designing-a-3d-model-for-3d-printing</a></li>
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Fused_deposition_modeling">https://en.wikipedia.org/wiki/Fused_deposition_modeling</a></li>
+<li><a class="reference external" href="http://www.instructables.com/id/3D-Printing-Basics/?ALLSTEPS">http://www.instructables.com/id/3D-Printing-Basics/?ALLSTEPS</a></li>
+</ul>
+</div>
+<div class="section" id="d-print-services">
+<h2>3D print services<a class="headerlink" href="#d-print-services" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="http://nihlibrary.campusguides.com/3dprinting">NIH Library</a></li>
+<li><a class="reference external" href="http://www.shapeways.com/">Shapeways</a></li>
+<li><a class="reference external" href="https://www.ponoko.com/">Ponoko</a></li>
+<li><a class="reference external" href="http://cubify.com/">Cubify</a></li>
+<li><a class="reference external" href="http://www.sculpteo.com/en/">Sculpteo</a></li>
+<li><a class="reference external" href="https://i.materialise.com/">i.materialise</a></li>
+</ul>
+</div>
 </div>
 
 
@@ -167,10 +196,10 @@ knowing about the process of 3D printing.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="import-stl.html" class="btn btn-neutral float-right" title="Importing STLs">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="3d-print-toolbox.html" class="btn btn-neutral float-right" title="3D Print Toolbox">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="concepts.html" class="btn btn-neutral" title="3D Printing background"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="export-stl.html" class="btn btn-neutral" title="Exporting to STL"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

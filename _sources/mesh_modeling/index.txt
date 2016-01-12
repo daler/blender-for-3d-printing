@@ -1,3 +1,5 @@
+.. _mesh_modeling:
+
 Mesh modeling
 =============
 
@@ -6,3 +8,4 @@ Mesh modeling
 
     mesh-concepts.rst
     extrude-inset.rst
+    object-origin.rst

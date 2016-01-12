@@ -33,8 +33,8 @@
 
   
     <link rel="top" title="Blender for 3D Printing" href="../index.html"/>
-        <link rel="next" title="Exporting to STL" href="quads-tris-export.html"/>
-        <link rel="prev" title="Extrude and inset" href="../mesh_modeling/extrude-inset.html"/> 
+        <link rel="next" title="Exporting to STL" href="export-stl.html"/>
+        <link rel="prev" title="Object origin" href="../mesh_modeling/object-origin.html"/> 
 
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
@@ -78,11 +78,20 @@
 <li class="toctree-l1"><a class="reference internal" href="../mesh_modeling/index.html">Mesh modeling</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../mesh_modeling/mesh-concepts.html">Mesh concepts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../mesh_modeling/extrude-inset.html">Extrude and inset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mesh_modeling/object-origin.html">Object origin</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="current reference internal" href="">Printing</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="quads-tris-export.html">Exporting to STL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="export-stl.html">Exporting to STL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="concepts.html">3D Printing background</a></li>
 <li class="toctree-l2"><a class="reference internal" href="3d-print-toolbox.html">3D Print Toolbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="import-stl.html">Importing STLs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mesh-problems.html">Mesh problems and solutions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="checklist-and-examples.html">Checklist and examples</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../next-steps/index.html">Next steps</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../next-steps/index.html#cheatsheets">Cheatsheets</a></li>
 </ul>
 </li>
 </ul>
@@ -121,14 +130,23 @@
           <div role="main" class="document">
             
   <div class="section" id="printing">
-<h1>Printing<a class="headerlink" href="#printing" title="Permalink to this headline">¶</a></h1>
+<span id="id1"></span><h1>Printing<a class="headerlink" href="#printing" title="Permalink to this headline">¶</a></h1>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="quads-tris-export.html">Exporting to STL</a></li>
-<li class="toctree-l1"><a class="reference internal" href="3d-print-toolbox.html">3D Print Toolbox</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="3d-print-toolbox.html#d-print-services">3D print services</a></li>
-<li class="toctree-l2"><a class="reference internal" href="3d-print-toolbox.html#units">Units</a></li>
-<li class="toctree-l2"><a class="reference internal" href="3d-print-toolbox.html#mesh-problems-and-solutions">Mesh problems and solutions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="export-stl.html">Exporting to STL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="concepts.html">3D Printing background</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="concepts.html#quick-background-on-3d-printing">Quick background on 3D Printing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="concepts.html#design-notes">Design notes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="concepts.html#references">References</a></li>
+<li class="toctree-l2"><a class="reference internal" href="concepts.html#d-print-services">3D print services</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="3d-print-toolbox.html">3D Print Toolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="import-stl.html">Importing STLs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mesh-problems.html">Mesh problems and solutions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="checklist-and-examples.html">Checklist and examples</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="checklist-and-examples.html#checklist">Checklist</a></li>
+<li class="toctree-l2"><a class="reference internal" href="checklist-and-examples.html#examples">Examples</a></li>
 </ul>
 </li>
 </ul>
@@ -141,10 +159,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="quads-tris-export.html" class="btn btn-neutral float-right" title="Exporting to STL">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="export-stl.html" class="btn btn-neutral float-right" title="Exporting to STL">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../mesh_modeling/extrude-inset.html" class="btn btn-neutral" title="Extrude and inset"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../mesh_modeling/object-origin.html" class="btn btn-neutral" title="Object origin"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

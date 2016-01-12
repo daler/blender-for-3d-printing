@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>3D Print Toolbox &mdash; Blender for 3D Printing</title>
+  <title>Object origin &mdash; Blender for 3D Printing</title>
   
 
   
@@ -33,9 +33,9 @@
 
   
     <link rel="top" title="Blender for 3D Printing" href="../index.html"/>
-        <link rel="up" title="Printing" href="index.html"/>
-        <link rel="next" title="Importing STLs" href="import-stl.html"/>
-        <link rel="prev" title="3D Printing background" href="concepts.html"/> 
+        <link rel="up" title="Mesh modeling" href="index.html"/>
+        <link rel="next" title="Printing" href="../printing/index.html"/>
+        <link rel="prev" title="Extrude and inset" href="extrude-inset.html"/> 
 
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
@@ -76,19 +76,19 @@
 <li class="toctree-l2"><a class="reference internal" href="../interface/cheatsheet-interface.html">Interface cheatsheet</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../mesh_modeling/index.html">Mesh modeling</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../mesh_modeling/mesh-concepts.html">Mesh concepts</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../mesh_modeling/extrude-inset.html">Extrude and inset</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../mesh_modeling/object-origin.html">Object origin</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Mesh modeling</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="mesh-concepts.html">Mesh concepts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="extrude-inset.html">Extrude and inset</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Object origin</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">Printing</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="export-stl.html">Exporting to STL</a></li>
-<li class="toctree-l2"><a class="reference internal" href="concepts.html">3D Printing background</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">3D Print Toolbox</a></li>
-<li class="toctree-l2"><a class="reference internal" href="import-stl.html">Importing STLs</a></li>
-<li class="toctree-l2"><a class="reference internal" href="mesh-problems.html">Mesh problems and solutions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="checklist-and-examples.html">Checklist and examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../printing/index.html">Printing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../printing/export-stl.html">Exporting to STL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../printing/concepts.html">3D Printing background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../printing/3d-print-toolbox.html">3D Print Toolbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../printing/import-stl.html">Importing STLs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../printing/mesh-problems.html">Mesh problems and solutions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../printing/checklist-and-examples.html">Checklist and examples</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../next-steps/index.html">Next steps</a><ul>
@@ -119,12 +119,12 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../contents.html">Docs</a> &raquo;</li>
       
-          <li><a href="index.html">Printing</a> &raquo;</li>
+          <li><a href="index.html">Mesh modeling</a> &raquo;</li>
       
-    <li>3D Print Toolbox</li>
+    <li>Object origin</li>
       <li class="wy-breadcrumbs-aside">
         
-          <a href="../_sources/printing/3d-print-toolbox.txt" rel="nofollow"> View page source</a>
+          <a href="../_sources/mesh_modeling/object-origin.txt" rel="nofollow"> View page source</a>
         
       </li>
   </ul>
@@ -132,33 +132,32 @@
 </div>
           <div role="main" class="document">
             
-  <div class="section" id="d-print-toolbox">
-<h1>3D Print Toolbox<a class="headerlink" href="#d-print-toolbox" title="Permalink to this headline">¶</a></h1>
-<p>Blender has many available <strong>Add-ons</strong> or plugins. By default, not all are
-pre-loaded. One of these is the 3D Print Toolbox, which we have to enable.</p>
+  <div class="section" id="object-origin">
+<h1>Object origin<a class="headerlink" href="#object-origin" title="Permalink to this headline">¶</a></h1>
+<p>The values in the Properties shelf refer to the position of the object origin.
+A new primitive (cube, torus, etc) has its origin in the center, but as we add
+change and add geometry, the origin does not change.</p>
+<p>It is useful to change the objects origin to better position the object using
+the Properties shelf or to re-center the origin at the object&#8217;s new geometry.</p>
+<div class="exercise admonition">
+<p class="first admonition-title">Exercise</p>
 <ul class="simple">
-<li><span class="menuselection">File ‣ User Preferences</span> (or <code class="kbd docutils literal"><span class="pre">Ctrl-Alt-U</span></code>) to open the
-User Preferences menu.</li>
-<li>In the <span class="menuselection">Add-ons</span> tab, start typing <cite>3d print</cite> into the search
-bar. Once the &#8220;Mesh: 3D Print Toolbox&#8221; shows up, click the checkbox on the far
-right to enable this add-on.</li>
+<li>To make coordinates easier to calculate, let&#8217;s move the &#8220;L&#8221; so that the
+bottom is at Z = 0.</li>
+<li>First, try setting the position to Z=0. Since the original origin was in
+the center of the cube, putting the origin at Z=0 means the bottom of the
+&#8220;L&#8221; dips below the Z=0 line.</li>
+<li>In Edit Mode, select the edge at the bottom corner of the &#8220;L&#8221;</li>
+<li>Snap cursor to selection</li>
+<li>Set origin to cursor</li>
+<li>Set postion to Z=0</li>
 </ul>
-<div class="figure" id="id1">
-<a class="reference internal image-reference" href="../_images/user_preferences_3dprint.png"><img alt="../_images/user_preferences_3dprint.png" src="../_images/user_preferences_3dprint.png" style="width: 75%;" /></a>
-<p class="caption"><span class="caption-text"><span class="menuselection">File ‣ User Preferences ‣ &#8220;Add-ons&#8221; Tab</span>. Check the box
-on the far right to enable</span></p>
+<div class="last admonition tip">
+<p class="first admonition-title">Tip</p>
+<p class="last">It&#8217;s also common to set the origin to the geometry, which puts it at
+the geometric center of the object.</p>
 </div>
-<ul class="simple">
-<li>Close the User Preferences window.</li>
-<li>In the Tool Shelf, there should be a new <cite>3D Printing</cite> tab.</li>
-</ul>
-<div class="figure" id="id2">
-<img alt="../_images/3dprint-toolbox.png" src="../_images/3dprint-toolbox.png" />
-<p class="caption"><span class="caption-text">The newly available 3D Printing toolbox</span></p>
 </div>
-<p>Understanding the options in the 3D Print Toolbox requires knowing about
-problems that can occur in printing. Understanding those problems requires
-knowing about the process of 3D printing.</p>
 </div>
 
 
@@ -167,10 +166,10 @@ knowing about the process of 3D printing.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="import-stl.html" class="btn btn-neutral float-right" title="Importing STLs">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../printing/index.html" class="btn btn-neutral float-right" title="Printing">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="concepts.html" class="btn btn-neutral" title="3D Printing background"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="extrude-inset.html" class="btn btn-neutral" title="Extrude and inset"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

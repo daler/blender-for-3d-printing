@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>3D Print Toolbox &mdash; Blender for 3D Printing</title>
+  <title>Next steps &mdash; Blender for 3D Printing</title>
   
 
   
@@ -33,9 +33,7 @@
 
   
     <link rel="top" title="Blender for 3D Printing" href="../index.html"/>
-        <link rel="up" title="Printing" href="index.html"/>
-        <link rel="next" title="Importing STLs" href="import-stl.html"/>
-        <link rel="prev" title="3D Printing background" href="concepts.html"/> 
+        <link rel="prev" title="Checklist and examples" href="../printing/checklist-and-examples.html"/> 
 
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
@@ -82,17 +80,17 @@
 <li class="toctree-l2"><a class="reference internal" href="../mesh_modeling/object-origin.html">Object origin</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">Printing</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="export-stl.html">Exporting to STL</a></li>
-<li class="toctree-l2"><a class="reference internal" href="concepts.html">3D Printing background</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">3D Print Toolbox</a></li>
-<li class="toctree-l2"><a class="reference internal" href="import-stl.html">Importing STLs</a></li>
-<li class="toctree-l2"><a class="reference internal" href="mesh-problems.html">Mesh problems and solutions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="checklist-and-examples.html">Checklist and examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../printing/index.html">Printing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../printing/export-stl.html">Exporting to STL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../printing/concepts.html">3D Printing background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../printing/3d-print-toolbox.html">3D Print Toolbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../printing/import-stl.html">Importing STLs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../printing/mesh-problems.html">Mesh problems and solutions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../printing/checklist-and-examples.html">Checklist and examples</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../next-steps/index.html">Next steps</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../next-steps/index.html#cheatsheets">Cheatsheets</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Next steps</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#cheatsheets">Cheatsheets</a></li>
 </ul>
 </li>
 </ul>
@@ -119,12 +117,10 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../contents.html">Docs</a> &raquo;</li>
       
-          <li><a href="index.html">Printing</a> &raquo;</li>
-      
-    <li>3D Print Toolbox</li>
+    <li>Next steps</li>
       <li class="wy-breadcrumbs-aside">
         
-          <a href="../_sources/printing/3d-print-toolbox.txt" rel="nofollow"> View page source</a>
+          <a href="../_sources/next-steps/index.txt" rel="nofollow"> View page source</a>
         
       </li>
   </ul>
@@ -132,33 +128,32 @@
 </div>
           <div role="main" class="document">
             
-  <div class="section" id="d-print-toolbox">
-<h1>3D Print Toolbox<a class="headerlink" href="#d-print-toolbox" title="Permalink to this headline">¶</a></h1>
-<p>Blender has many available <strong>Add-ons</strong> or plugins. By default, not all are
-pre-loaded. One of these is the 3D Print Toolbox, which we have to enable.</p>
+  <div class="section" id="next-steps">
+<h1>Next steps<a class="headerlink" href="#next-steps" title="Permalink to this headline">¶</a></h1>
+<p>There&#8217;s a lot we haven&#8217;t covered here; here are some suggestions for what to
+learn next.</p>
 <ul class="simple">
-<li><span class="menuselection">File ‣ User Preferences</span> (or <code class="kbd docutils literal"><span class="pre">Ctrl-Alt-U</span></code>) to open the
-User Preferences menu.</li>
-<li>In the <span class="menuselection">Add-ons</span> tab, start typing <cite>3d print</cite> into the search
-bar. Once the &#8220;Mesh: 3D Print Toolbox&#8221; shows up, click the checkbox on the far
-right to enable this add-on.</li>
+<li><a class="reference external" href="https://www.blender.org/manual/modeling/modifiers/generate/booleans.html">Boolean modifier</a>,
+especially useful for &#8220;drilling&#8221; holes in meshes</li>
+<li><a class="reference external" href="https://www.blender.org/manual/modeling/modifiers/generate/mirror.html">Mirror modifier</a>,
+useful for modeling symmetrical objects &#8211; you only have to work on one side
+and the other side is updated automatically.</li>
+<li><a class="reference external" href="https://www.blender.org/manual/modeling/modifiers/generate/solidify.html">Solidify modifier</a>,
+useful for saving material (and money) by hollowing out large models</li>
+<li><a class="reference external" href="https://www.blender.org/manual/modeling/meshes/selecting/advanced.html">Advanced selection</a>,
+for all sorts of useful ways to select exactly the vertices you want.</li>
+<li><a class="reference external" href="https://www.blender.org/manual/painting_sculpting/painting/vertex_paint/introduction.html">Vertex painting</a>,
+for prints from services that support multiple colors.</li>
 </ul>
-<div class="figure" id="id1">
-<a class="reference internal image-reference" href="../_images/user_preferences_3dprint.png"><img alt="../_images/user_preferences_3dprint.png" src="../_images/user_preferences_3dprint.png" style="width: 75%;" /></a>
-<p class="caption"><span class="caption-text"><span class="menuselection">File ‣ User Preferences ‣ &#8220;Add-ons&#8221; Tab</span>. Check the box
-on the far right to enable</span></p>
-</div>
+<div class="section" id="cheatsheets">
+<h2>Cheatsheets<a class="headerlink" href="#cheatsheets" title="Permalink to this headline">¶</a></h2>
+<p>Google for &#8220;Blender Cheatsheet&#8221;; here are some direct links to get you started:</p>
 <ul class="simple">
-<li>Close the User Preferences window.</li>
-<li>In the Tool Shelf, there should be a new <cite>3D Printing</cite> tab.</li>
+<li><a class="reference external" href="http://www.giudansky.com/design/51-blender-map">one</a></li>
+<li><a class="reference external" href="https://63838860080f936a9e74ec314fea61e51c110542.googledrive.com/host/0B75zuK6fBv7-UkE2VU5takkxUTA/files/CHEAT_SHEET.pdf">two</a></li>
+<li><a class="reference external" href="http://gryllus.net/Blender/Syllabus/Blender%20Hotkeys%20Cheatsheet.pdf">three</a></li>
 </ul>
-<div class="figure" id="id2">
-<img alt="../_images/3dprint-toolbox.png" src="../_images/3dprint-toolbox.png" />
-<p class="caption"><span class="caption-text">The newly available 3D Printing toolbox</span></p>
 </div>
-<p>Understanding the options in the 3D Print Toolbox requires knowing about
-problems that can occur in printing. Understanding those problems requires
-knowing about the process of 3D printing.</p>
 </div>
 
 
@@ -167,10 +162,8 @@ knowing about the process of 3D printing.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="import-stl.html" class="btn btn-neutral float-right" title="Importing STLs">Next <span class="fa fa-arrow-circle-right"></span></a>
       
-      
-        <a href="concepts.html" class="btn btn-neutral" title="3D Printing background"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../printing/checklist-and-examples.html" class="btn btn-neutral" title="Checklist and examples"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
