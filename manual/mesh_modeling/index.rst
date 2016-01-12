@@ -8,3 +8,4 @@ Mesh modeling
 
     mesh-concepts.rst
     extrude-inset.rst
+    object-origin.rst
