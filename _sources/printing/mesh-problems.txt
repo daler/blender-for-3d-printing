@@ -14,4 +14,9 @@ sharp, too-small faces   Add geometry or modify design; try tri -> quad ->
 ======================== ================================================
 
 
+Some useful links:
+
+* `Fixing non-manifold models <http://www.shapeways.com/tutorials/fixing-non-manifold-models>`_ in Blender, from `Shapeways <http://www.shapeways.com>`_
+* `Creating hollow objects <http://www.shapeways.com/tutorials/creating-hollow-objects>`_ in Blender, from `Shapeways <http://www.shapeways.com>`_
+* `Tips for modeling in Blender for 3D printing <http://www.sculpteo.com/en/tutorial/prepare-your-model-3d-printing-blender/>`_, from `Sculpteo <http://www.sculpteo.com/>`_
 

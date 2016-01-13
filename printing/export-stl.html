@@ -85,8 +85,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Printing</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="">Exporting to STL</a></li>
 <li class="toctree-l2"><a class="reference internal" href="concepts.html">3D Printing background</a></li>
-<li class="toctree-l2"><a class="reference internal" href="3d-print-toolbox.html">3D Print Toolbox</a></li>
-<li class="toctree-l2"><a class="reference internal" href="import-stl.html">Importing STLs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3d-print-toolbox.html">Blender&#8217;s tools for checking models</a></li>
 <li class="toctree-l2"><a class="reference internal" href="mesh-problems.html">Mesh problems and solutions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="checklist-and-examples.html">Checklist and examples</a></li>
 </ul>
@@ -139,34 +138,99 @@
 printing. This section demonstrates the changes that occur to a mesh when
 exporting and re-importing an STL</p>
 <div class="exercise admonition">
-<p class="first admonition-title">Exercise</p>
-<ul class="last simple">
+<p class="first admonition-title">Exercise: Exporting an STL</p>
+<ul class="simple">
 <li>Either save your existing work as a <cite>.blend</cite> file (<span class="menuselection">File
-‣ Save</span>) or load this example</li>
-<li>Export to STL using <span class="menuselection">File ‣ Export ‣ Stl</span></li>
-<li>Select a filename and location</li>
-<li>Click the <span class="menuselection">Export STL</span> button</li>
+‣ Save</span>) or load this example: <a class="reference download internal" href="../_downloads/L-centered.blend"><code class="xref download docutils literal"><span class="pre">/images/L-centered.blend</span></code></a>.</li>
+<li>Select the object to export.</li>
+<li><span class="menuselection">File ‣ Export ‣ Stl</span></li>
+<li>Check the <cite>Scene Unit</cite> checkbox. This stores the units in the STL file.</li>
+</ul>
+<div class="figure">
+<img alt="../_images/stl-export-options.png" src="../_images/stl-export-options.png" />
+</div>
+<ul class="simple">
+<li>Select a filename and location lick the <span class="menuselection">Export STL</span> button</li>
 <li>Import the just-exported STL: (<span class="menuselection">File ‣ Import ‣ Stl</span>).</li>
 <li>The new object came in right on top of the existing one, so select it and
 move it out of the way.</li>
 <li>Switch to Edit Mode after selecting the original and the newly imported
 version: what&#8217;s different?</li>
 </ul>
+<div class="last figure">
+<a class="reference internal image-reference" href="../_images/imported-stl.png"><img alt="../_images/imported-stl.png" src="../_images/imported-stl.png" style="width: 250px;" /></a>
+</div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Be careful: when opening someone else&#8217;s STL, often we don&#8217;t know ahead of
+time if units were stored in the STL file. If units were not stored,
+Blender assumes meters. If units are not set in Blender but they are set in
+the STL, Blender assumes it&#8217;s &#8220;None&#8221; units are meters.</p>
+<p>That is:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="24%" />
+<col width="43%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Blender units</th>
+<th class="head">STL units</th>
+<th class="head">Imported object size</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>None</td>
+<td>None</td>
+<td>OK</td>
+</tr>
+<tr class="row-odd"><td>millimeters</td>
+<td>millimeters</td>
+<td>OK</td>
+</tr>
+<tr class="row-even"><td>meters</td>
+<td>meters</td>
+<td>OK</td>
+</tr>
+<tr class="row-odd"><td>None</td>
+<td>millmeters</td>
+<td>Very small</td>
+</tr>
+<tr class="row-even"><td>millimeters</td>
+<td>None</td>
+<td>Huge</td>
+</tr>
+<tr class="row-odd"><td>meters</td>
+<td>None</td>
+<td>OK</td>
+</tr>
+</tbody>
+</table>
+<p class="last">If the size of the imported object seems wrong, try <a class="reference internal" href="../interface/transforms.html#units"><span>setting or unsetting
+Blender&#8217;s units</span></a></p>
 </div>
 <p>Many algorithms for working with 3D objects operate on triangles &#8211; in
 particular those used for slicing models for printing. The STL format works in
 triangles (<strong>tris</strong>), but we were modeling in <strong>quads</strong>. Exporting an STL
 implicitly triangulated all faces.</p>
+<p>Sometimes it is useful to convert from tris back to quads, since they&#8217;re easier
+to think about, manipulate, and calculate coordinates for precision modeling.</p>
 <div class="exercise admonition">
-<p class="first admonition-title">Exercise</p>
-<ul class="last simple">
+<p class="first admonition-title">Exercise: tris to quads</p>
+<ul class="simple">
 <li>In Edit Mode, select all faces</li>
-<li>Convert tris to quads (<code class="kbd docutils literal"><span class="pre">Ctrl-J</span></code>, or <code class="kbd docutils literal"><span class="pre">Space</span></code> and search for
+<li>Convert tris to quads (<code class="kbd docutils literal"><span class="pre">Alt-J</span></code>, or <code class="kbd docutils literal"><span class="pre">Space</span></code> and search for
 &#8220;tris to quads&#8221;)</li>
-<li>Note that some faces (the inset ones) may not be converted to quads &#8211;
-the algorithm is not perfect. To fix this, we could delete the edges and
-use <code class="kbd docutils literal"><span class="pre">F</span></code> to re-fill the faces as quads. We might have to do this if
-we imported someone else&#8217;s STL. In practice, it&#8217;s better to save the
+</ul>
+<div class="figure">
+<a class="reference internal image-reference" href="../_images/tris-to-quads.png"><img alt="../_images/tris-to-quads.png" src="../_images/tris-to-quads.png" style="width: 250px;" /></a>
+</div>
+<ul class="last simple">
+<li>Note that some faces (the inset ones) were not converted to quads &#8211; the
+algorithm is not perfect. To fix this, we could delete the edges and use
+<code class="kbd docutils literal"><span class="pre">F</span></code> to re-fill the faces as quads. We might have to do this if we
+imported someone else&#8217;s STL. In practice, it&#8217;s better to save the
 original .blend file for modifiying.</li>
 </ul>
 </div>
@@ -190,7 +254,7 @@ original .blend file for modifiying.</li>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright Ryan Dale, 2016. This work is licensed under the Creative Commons Attribution 4.0 International License (CC-BY). See http://creativecommons.org/licenses/by/4.0/ for details..
+        &copy; Copyright Ryan Dale, 2016. CC-BY: http://creativecommons.org/licenses/by/4.0.
     </p>
   </div>
 

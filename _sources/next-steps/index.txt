@@ -24,8 +24,15 @@ learn next.
   <https://www.blender.org/manual/painting_sculpting/painting/vertex_paint/introduction.html>`_,
   for prints from services that support multiple colors.
 
+
+
 Learning resources
 ------------------
+If there's **a single resource** I could recommend specifically for 3D printing
+it's the `tips for modeling in Blender for 3D printing
+<http://www.sculpteo.com/en/tutorial/prepare-your-model-3d-printing-blender/>`_,
+from `Sculpteo <http://www.sculpteo.com/>`_.
+
 For further learning, there are many resources including:
 
     * `Blender Manual <https://www.blender.org/manual/>`_

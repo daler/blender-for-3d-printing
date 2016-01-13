@@ -13,7 +13,7 @@ Action                  Description
 ====================== ================================================
 
 
-.. admonition:: Exercise
+.. admonition:: Exercise: searching for commands with :kbd:`Space`
     :class: exercise
 
     * Zoom out and move the 3D Cursor away from the cube

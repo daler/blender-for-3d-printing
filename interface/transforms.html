@@ -85,8 +85,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../printing/index.html">Printing</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../printing/export-stl.html">Exporting to STL</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../printing/concepts.html">3D Printing background</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../printing/3d-print-toolbox.html">3D Print Toolbox</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../printing/import-stl.html">Importing STLs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../printing/3d-print-toolbox.html">Blender&#8217;s tools for checking models</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../printing/mesh-problems.html">Mesh problems and solutions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../printing/checklist-and-examples.html">Checklist and examples</a></li>
 </ul>
@@ -139,8 +138,8 @@
 <strong>transformation</strong>.</p>
 <table border="1" class="docutils">
 <colgroup>
-<col width="31%" />
-<col width="69%" />
+<col width="35%" />
+<col width="65%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">Action</th>
@@ -157,16 +156,25 @@
 <tr class="row-even"><td><code class="kbd docutils literal"><span class="pre">R</span></code></td>
 <td>Rotate</td>
 </tr>
-<tr class="row-odd"><td><code class="kbd docutils literal"><span class="pre">LMB</span></code></td>
+<tr class="row-odd"><td><code class="kbd docutils literal"><span class="pre">LMB</span></code> or <code class="kbd docutils literal"><span class="pre">Enter</span></code></td>
 <td>Confirm transformation</td>
+</tr>
+<tr class="row-even"><td><code class="kbd docutils literal"><span class="pre">RMB</span></code> or <code class="kbd docutils literal"><span class="pre">Esc</span></code></td>
+<td>Cancel transformation</td>
 </tr>
 </tbody>
 </table>
 <div class="exercise admonition">
-<p class="first admonition-title">Exercise</p>
-<ul class="last simple">
+<p class="first admonition-title">Exercise: experimenting with transforms</p>
+<ul class="simple">
 <li>Move, rotate, scale the cube to get used to the controls</li>
 <li>Note the changing numbers in the lower left corner of the 3D View</li>
+</ul>
+<div class="figure" id="id2">
+<img alt="../_images/coords.png" src="../_images/coords.png" />
+<p class="caption"><span class="caption-text">Coordinates show the tranformation values (here, a move operation)</span></p>
+</div>
+<ul class="last simple">
 <li>Use <code class="kbd docutils literal"><span class="pre">Ctrl-Z</span></code> to undo and get the cube back to the origin.</li>
 </ul>
 </div>
@@ -206,13 +214,13 @@ transformation to a particular axis by hitting the key for that axis</p>
 </tbody>
 </table>
 <div class="exercise admonition">
-<p class="first admonition-title">Exercise</p>
+<p class="first admonition-title">Exercise: constrained transforms</p>
 <ul class="simple">
 <li>Make the cube taller (<code class="kbd docutils literal"><span class="pre">S</span></code>, <code class="kbd docutils literal"><span class="pre">Z</span></code>)</li>
 <li>Move the cube back 5 units (<code class="kbd docutils literal"><span class="pre">G</span></code>, <code class="kbd docutils literal"><span class="pre">Y</span></code>, hold <code class="kbd docutils literal"><span class="pre">Ctrl</span></code> and pay
 attention to the numbers at the bottom left)</li>
 </ul>
-<div class="last figure" id="id1">
+<div class="last figure" id="id3">
 <img alt="../_images/stretched-cube-back-5.png" src="../_images/stretched-cube-back-5.png" />
 <p class="caption"><span class="caption-text">The stretched cube, in the process of being moved back in the
 Y direction 5 units.</span></p>
@@ -239,11 +247,12 @@ Y direction 5 units.</span></p>
 </tbody>
 </table>
 <div class="exercise admonition">
-<p class="first admonition-title">Exercise</p>
+<p class="first admonition-title">Exercise: numerical transforms</p>
 <ul class="simple">
-<li>Rotate the cube by 45 degrees along the Y axis</li>
+<li>Rotate the cube around the Y axis by 45 degrees (<code class="kbd docutils literal"><span class="pre">R</span></code>, <code class="kbd docutils literal"><span class="pre">Y</span></code>,
+<code class="kbd docutils literal"><span class="pre">45</span></code>, <code class="kbd docutils literal"><span class="pre">Enter</span></code>).</li>
 </ul>
-<div class="last figure" id="id2">
+<div class="last figure" id="id4">
 <a class="reference internal image-reference" href="../_images/stretched-cube-rotated.png"><img alt="../_images/stretched-cube-rotated.png" src="../_images/stretched-cube-rotated.png" style="width: 50%;" /></a>
 <p class="caption"><span class="caption-text">The stretched cube, in the process of being rotated 45 degrees</span></p>
 </div>
@@ -270,33 +279,33 @@ object. Toggle the shelf on and off with <code class="kbd docutils literal"><spa
 </tbody>
 </table>
 <div class="exercise admonition">
-<p class="first admonition-title">Exercise</p>
+<p class="first admonition-title">Exercise: precision transforms</p>
 <ul class="simple">
 <li>Using the Properties Shelf, reset the cube to its original location (0,
 0, 0), rotation (0, 0, 0), and scale (1, 1, 1)</li>
 </ul>
-<div class="figure" id="id3">
+<div class="figure" id="id5">
 <img alt="../_images/nkey-before.png" src="../_images/nkey-before.png" />
 <p class="caption"><span class="caption-text">Properties before resetting transforms</span></p>
 </div>
-<div class="last figure" id="id4">
+<div class="last figure" id="id6">
 <img alt="../_images/nkey-after.png" src="../_images/nkey-after.png" />
 <p class="caption"><span class="caption-text">Properties after resetting transforms</span></p>
 </div>
 </div>
 </div>
 <div class="section" id="units">
-<h2>Units<a class="headerlink" href="#units" title="Permalink to this headline">¶</a></h2>
+<span id="id1"></span><h2>Units<a class="headerlink" href="#units" title="Permalink to this headline">¶</a></h2>
 <p>For 3D printing, we want to be able to relate what we do in Blender to the real
 world. By default, Blender uses arbitrary &#8220;Blender units&#8221;: one unit per grid
 square. Let&#8217;s set the units to millimeters.</p>
 <div class="exercise admonition">
-<p class="first admonition-title">Exercise</p>
+<p class="first admonition-title">Exercise: setting units</p>
 <ul class="simple">
 <li>In the Properties panel (far right of the interface), click the button
 for Scene Properties (see figure below)</li>
 </ul>
-<div class="figure" id="id5">
+<div class="figure" id="id7">
 <img alt="../_images/scene-properties.png" src="../_images/scene-properties.png" />
 <p class="caption"><span class="caption-text">Scene properties (after clicking highlighted button)</span></p>
 </div>
@@ -305,7 +314,7 @@ for Scene Properties (see figure below)</li>
 &#8220;Scale&#8221; text box. Now one &#8220;Blender unit&#8221; will be equivalent to 0.001
 meters or 1 mm.</li>
 </ul>
-<div class="figure" id="id6">
+<div class="figure" id="id8">
 <img alt="../_images/scene-properties-units.png" src="../_images/scene-properties-units.png" />
 <p class="caption"><span class="caption-text">After setting units to millimeters</span></p>
 </div>
@@ -316,7 +325,7 @@ to unfold it.</li>
 <li>Enter <span class="menuselection">0.001</span> into the &#8220;Scale&#8221; text box. This makes the
 background grid use millimeters as well.</li>
 </ul>
-<div class="figure" id="id7">
+<div class="figure" id="id9">
 <img alt="../_images/display-panel.png" src="../_images/display-panel.png" />
 <p class="caption"><span class="caption-text">Set the scale of grid lines to be 0.001 units (mm) as well.</span></p>
 </div>
@@ -355,7 +364,7 @@ many more details and tricks for transformations.</p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright Ryan Dale, 2016. This work is licensed under the Creative Commons Attribution 4.0 International License (CC-BY). See http://creativecommons.org/licenses/by/4.0/ for details..
+        &copy; Copyright Ryan Dale, 2016. CC-BY: http://creativecommons.org/licenses/by/4.0.
     </p>
   </div>
 

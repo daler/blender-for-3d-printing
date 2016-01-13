@@ -85,8 +85,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../printing/index.html">Printing</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../printing/export-stl.html">Exporting to STL</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../printing/concepts.html">3D Printing background</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../printing/3d-print-toolbox.html">3D Print Toolbox</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../printing/import-stl.html">Importing STLs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../printing/3d-print-toolbox.html">Blender&#8217;s tools for checking models</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../printing/mesh-problems.html">Mesh problems and solutions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../printing/checklist-and-examples.html">Checklist and examples</a></li>
 </ul>
@@ -143,7 +142,7 @@ the Properties shelf or to re-center the origin at the object&#8217;s new geomet
 <p>If you need to catch up, you may want to start by downloading this .blend file:
 <a class="reference download internal" href="../_downloads/L.blend"><code class="xref download docutils literal"><span class="pre">L.blend</span></code></a>.</p>
 <div class="exercise admonition">
-<p class="first admonition-title">Exercise</p>
+<p class="first admonition-title">Exercise: resetting the origin</p>
 <ul class="simple">
 <li>To make coordinates easier to calculate, let&#8217;s move the &#8220;L&#8221; so that the
 bottom is at Z = 0.</li>
@@ -151,7 +150,7 @@ bottom is at Z = 0.</li>
 the center of the cube, putting the origin at Z=0 means the bottom of the
 &#8220;L&#8221; dips below the Z=0 line.</li>
 </ul>
-<div class="figure" id="id3">
+<div class="figure" id="id1">
 <img alt="../_images/quad-view-center.png" src="../_images/quad-view-center.png" />
 <p class="caption"><span class="caption-text">Even though the position in the Properties Shelf is (0, 0, 0), the &#8220;L&#8221;
 hangs below the Z=0 line. This is because the center (the orange
@@ -162,7 +161,7 @@ refer to.</span></p>
 <li>In Edit Mode, select the edge at the bottom corner of the &#8220;L&#8221;</li>
 <li>Snap cursor to selection</li>
 </ul>
-<div class="figure" id="id4">
+<div class="figure" id="id2">
 <a class="reference internal image-reference" href="../_images/center-2.png"><img alt="../_images/center-2.png" src="../_images/center-2.png" style="width: 350px;" /></a>
 <p class="caption"><span class="caption-text">Bottom edge selected, and 3D cursor snapped to selection. Note that it
 snaps to the midpoint between the two selected vertices.</span></p>
@@ -171,7 +170,7 @@ snaps to the midpoint between the two selected vertices.</span></p>
 <li>Switch to Object Mode (otherwise we will get an error saying the origin
 can&#8217;t be set in Edit Mode)</li>
 <li>Set origin to cursor (<code class="kbd docutils literal"><span class="pre">Space</span></code>, search for &#8220;Set Origin&#8221;, Then choose
-&#8220;Origin to 3D Cursor&#8221;. Or :kbd:<a href="#id1"><span class="problematic" id="id2">`</span></a>Ctrl-Alt-Shift-C).</li>
+&#8220;Origin to 3D Cursor&#8221;. Or <code class="kbd docutils literal"><span class="pre">Ctrl-Alt-Shift-C</span></code>).</li>
 <li>Set postion to Z=0</li>
 </ul>
 <div class="last admonition tip">
@@ -200,7 +199,7 @@ the geometric center of the object.</p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright Ryan Dale, 2016. This work is licensed under the Creative Commons Attribution 4.0 International License (CC-BY). See http://creativecommons.org/licenses/by/4.0/ for details..
+        &copy; Copyright Ryan Dale, 2016. CC-BY: http://creativecommons.org/licenses/by/4.0.
     </p>
   </div>
 

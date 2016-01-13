@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>3D Print Toolbox &mdash; Blender for 3D Printing</title>
+  <title>Blender’s tools for checking models &mdash; Blender for 3D Printing</title>
   
 
   
@@ -34,7 +34,7 @@
   
     <link rel="top" title="Blender for 3D Printing" href="../index.html"/>
         <link rel="up" title="Printing" href="index.html"/>
-        <link rel="next" title="Importing STLs" href="import-stl.html"/>
+        <link rel="next" title="Mesh problems and solutions" href="mesh-problems.html"/>
         <link rel="prev" title="3D Printing background" href="concepts.html"/> 
 
   
@@ -85,8 +85,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Printing</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="export-stl.html">Exporting to STL</a></li>
 <li class="toctree-l2"><a class="reference internal" href="concepts.html">3D Printing background</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">3D Print Toolbox</a></li>
-<li class="toctree-l2"><a class="reference internal" href="import-stl.html">Importing STLs</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Blender&#8217;s tools for checking models</a></li>
 <li class="toctree-l2"><a class="reference internal" href="mesh-problems.html">Mesh problems and solutions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="checklist-and-examples.html">Checklist and examples</a></li>
 </ul>
@@ -122,7 +121,7 @@
       
           <li><a href="index.html">Printing</a> &raquo;</li>
       
-    <li>3D Print Toolbox</li>
+    <li>Blender&#8217;s tools for checking models</li>
       <li class="wy-breadcrumbs-aside">
         
           <a href="../_sources/printing/3d-print-toolbox.txt" rel="nofollow"> View page source</a>
@@ -133,10 +132,18 @@
 </div>
           <div role="main" class="document">
             
-  <div class="section" id="d-print-toolbox">
-<h1>3D Print Toolbox<a class="headerlink" href="#d-print-toolbox" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="blender-s-tools-for-checking-models">
+<h1>Blender&#8217;s tools for checking models<a class="headerlink" href="#blender-s-tools-for-checking-models" title="Permalink to this headline">¶</a></h1>
 <p>Blender has many available <strong>Add-ons</strong> or plugins. By default, not all are
 pre-loaded. One of these is the 3D Print Toolbox, which we have to enable.</p>
+<p>We also have the <cite>Mesh Analysis</cite> panel, in the Properties Shelf, which has
+a subset of the 3D Print Toolbox features:</p>
+<div class="figure" id="id1">
+<img alt="../_images/mesh-analysis.png" src="../_images/mesh-analysis.png" />
+<p class="caption"><span class="caption-text">The Mesh Analysis panel, in the Properties Shelf. Must be in Edit Mode.</span></p>
+</div>
+<div class="admonition-exercise-enabling-the-3d-print-toolbox admonition">
+<p class="first admonition-title">Exercise: enabling the 3D Print Toolbox.</p>
 <ul class="simple">
 <li><span class="menuselection">File ‣ User Preferences</span> (or <code class="kbd docutils literal"><span class="pre">Ctrl-Alt-U</span></code>) to open the
 User Preferences menu.</li>
@@ -144,7 +151,7 @@ User Preferences menu.</li>
 bar. Once the &#8220;Mesh: 3D Print Toolbox&#8221; shows up, click the checkbox on the far
 right to enable this add-on.</li>
 </ul>
-<div class="figure" id="id1">
+<div class="figure" id="id2">
 <a class="reference internal image-reference" href="../_images/user_preferences_3dprint.png"><img alt="../_images/user_preferences_3dprint.png" src="../_images/user_preferences_3dprint.png" style="width: 75%;" /></a>
 <p class="caption"><span class="caption-text"><span class="menuselection">File ‣ User Preferences ‣ &#8220;Add-ons&#8221; Tab</span>. Check the box
 on the far right to enable</span></p>
@@ -153,13 +160,11 @@ on the far right to enable</span></p>
 <li>Close the User Preferences window.</li>
 <li>In the Tool Shelf, there should be a new <cite>3D Printing</cite> tab.</li>
 </ul>
-<div class="figure" id="id2">
+<div class="last figure" id="id3">
 <img alt="../_images/3dprint-toolbox.png" src="../_images/3dprint-toolbox.png" />
 <p class="caption"><span class="caption-text">The newly available 3D Printing toolbox</span></p>
 </div>
-<p>Understanding the options in the 3D Print Toolbox requires knowing about
-problems that can occur in printing. Understanding those problems requires
-knowing about the process of 3D printing.</p>
+</div>
 </div>
 
 
@@ -168,7 +173,7 @@ knowing about the process of 3D printing.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="import-stl.html" class="btn btn-neutral float-right" title="Importing STLs">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="mesh-problems.html" class="btn btn-neutral float-right" title="Mesh problems and solutions">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="concepts.html" class="btn btn-neutral" title="3D Printing background"><span class="fa fa-arrow-circle-left"></span> Previous</a>
@@ -180,7 +185,7 @@ knowing about the process of 3D printing.</p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright Ryan Dale, 2016. This work is licensed under the Creative Commons Attribution 4.0 International License (CC-BY). See http://creativecommons.org/licenses/by/4.0/ for details..
+        &copy; Copyright Ryan Dale, 2016. CC-BY: http://creativecommons.org/licenses/by/4.0.
     </p>
   </div>
 

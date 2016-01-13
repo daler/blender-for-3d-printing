@@ -18,7 +18,7 @@ Action               Description
 :kbd:`Tab`           Toggle between Object Mode and Edit Mode
 ==================== ================================================
 
-.. admonition:: Exercise
+.. admonition:: Exercise: mesh concepts
     :class: Exercise
 
     .. figure:: /images/object-cube.png
@@ -80,7 +80,7 @@ Action                               Description
 :kbd:`MW` (when in circle selection) Resize the selection circle
 ==================================== ================================================
 
-.. admonition:: Exercise
+.. admonition:: Exercise: selections in solid vs wireframe view
     :class: Exercise
 
     * Switch to Object Mode
@@ -152,7 +152,7 @@ Action                               Description
 Making and filling holes
 ------------------------
 
-.. admonition:: Exercise
+.. admonition:: Exercise: the effect of deleting a vertex/edge/face
     :class: exercise
 
     * Switch to Edit Mode on the torus
@@ -195,7 +195,7 @@ Action                               Description
 ==================================== ================================================
 
 
-.. admonition:: Exercise
+.. admonition:: Exercise: creating new edges and faces
     :class: exercise
 
 
