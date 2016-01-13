@@ -24,6 +24,17 @@ learn next.
   <https://www.blender.org/manual/painting_sculpting/painting/vertex_paint/introduction.html>`_,
   for prints from services that support multiple colors.
 
+Learning resources
+------------------
+For further learning, there are many resources including:
+
+    * `Blender Manual <https://www.blender.org/manual/>`_
+    * `blender.stackexchange.com <http://blender.stackexchange.com/>`_
+    * `blenderartists.org forum <http://blenderartists.org/forum/>`_
+    * `List of support options at blender.org <http://www.blender.org/support/>`_
+
+
+
 Cheatsheets
 -----------
 Google for "Blender Cheatsheet"; here are some direct links to get you started:
