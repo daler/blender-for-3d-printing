@@ -52,7 +52,7 @@ print("Using Index:", master_doc)
 
 # General information about the project.
 project = 'Blender for 3D Printing'
-copyright = 'Ryan Dale, 2016. This work is licensed under the Creative Commons Attribution 4.0 International License (CC-BY). See http://creativecommons.org/licenses/by/4.0/ for details.'
+copyright = 'Ryan Dale, 2016. CC-BY: http://creativecommons.org/licenses/by/4.0'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
