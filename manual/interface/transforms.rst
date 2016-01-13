@@ -4,14 +4,15 @@ Transformations
 We can **move**, **scale**, and **rotate** objects, collectively called
 **transformation**.
 
-====================== ================================================
-Action                  Description
-====================== ================================================
-:kbd:`G`               Grab (move, translate)
-:kbd:`S`               Scale (resize)
-:kbd:`R`               Rotate
-:kbd:`LMB`             Confirm transformation
-====================== ================================================
+========================== ================================================
+Action                     Description
+========================== ================================================
+:kbd:`G`                   Grab (move, translate)
+:kbd:`S`                   Scale (resize)
+:kbd:`R`                   Rotate
+:kbd:`LMB` or :kbd:`Enter` Confirm transformation
+:kbd:`RMB` or :kbd:`Esc`   Cancel transformation
+========================== ================================================
 
 .. admonition:: Exercise: experimenting with transforms
     :class: exercise
@@ -19,6 +20,10 @@ Action                  Description
     * Move, rotate, scale the cube to get used to the controls
 
     * Note the changing numbers in the lower left corner of the 3D View
+
+    .. figure:: /images/coords.png
+
+        Coordinates show the tranformation values (here, a move operation)
 
     * Use :kbd:`Ctrl-Z` to undo and get the cube back to the origin.
 
@@ -67,7 +72,8 @@ Action                                                       Description
 .. admonition:: Exercise: numerical transforms
     :class: exercise
 
-    * Rotate the cube by 45 degrees along the Y axis
+    * Rotate the cube around the Y axis by 45 degrees (:kbd:`R`, :kbd:`Y`,
+      :kbd:`45`, :kbd:`Enter`).
 
     .. figure:: /images/stretched-cube-rotated.png
         :width: 50%
@@ -101,6 +107,7 @@ Action                                              Description
 
         Properties after resetting transforms
 
+.. _units:
 
 Units
 -----

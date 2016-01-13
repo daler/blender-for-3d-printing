@@ -22,13 +22,14 @@ After starting Blender and clicking to dismiss the splash screen, we see this
 default interface:
 
 .. figure:: /images/start.png
-   :align: center
+    :width: 400px
 
 Here's an annotated version of the default layout:
 
 .. figure:: /images/annotated-layout.png
+    :width: 400px
 
-   Blender's default layout
+    Blender's default layout
 
 
 Info
@@ -60,6 +61,7 @@ Go to :menuselection:`File --> User Preferences` and click on the
 straightforward.
 
 .. figure:: /images/user-prefs-interface.png
+    :width: 400px
 
     Make sure `Auto Depth` and `Rotate Around Selection` are checked in the
     middle column.
