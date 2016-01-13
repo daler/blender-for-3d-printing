@@ -91,7 +91,7 @@ Action                                              Description
     :class: exercise
 
     * Using the Properties Shelf, reset the cube to its original location (0,
-      0, 0), rotation (0, 0, 0), and scale (1, 1, 1) 
+      0, 0), rotation (0, 0, 0), and scale (1, 1, 1)
 
     .. figure:: /images/nkey-before.png
 
@@ -101,6 +101,47 @@ Action                                              Description
 
         Properties after resetting transforms
 
+
+Units
+-----
+
+For 3D printing, we want to be able to relate what we do in Blender to the real
+world. By default, Blender uses arbitrary "Blender units": one unit per grid
+square. Let's set the units to millimeters.
+
+.. admonition:: Exercise
+    :class: exercise
+
+    * In the Properties panel (far right of the interface), click the button
+      for Scene Properties (see figure below)
+
+    .. figure:: /images/scene-properties.png
+
+        Scene properties (after clicking highlighted button)
+
+    * Click :menuselection:`Metric`, and enter :menuselection:`0.001` into the
+      "Scale" text box. Now one "Blender unit" will be equivalent to 0.001
+      meters or 1 mm.
+
+    .. figure:: /images/scene-properties-units.png
+
+        After setting units to millimeters
+
+    * In the Properties Shelf (the one toggled by :kbd:`N`), look for the
+      :menuselection:`Display` section. It may be folded up, so click the arrow
+      to unfold it.
+
+    * Enter :menuselection:`0.001` into the "Scale" text box. This makes the
+      background grid use millimeters as well.
+
+    .. figure:: /images/display-panel.png
+
+        Set the scale of grid lines to be 0.001 units (mm) as well.
+
+    .. note::
+
+        If importing a file that someone else created, you may have to reset
+        the units. You may find yourself doing this a lot . . .
 
 .. seealso::
 

@@ -21,45 +21,44 @@ Action               Description
 .. admonition:: Exercise
     :class: Exercise
 
-    * With the cube selected, enter Edit Mode (:kbd:`Tab`)
-
-    * Deselect all (:kbd:`A`), then select one vertex
-
-    * Add an adjacent vertext to the selection, and notice how the **edge** is
-      highlighted.
-
-    * Select the other adjacent vertices to select the **face**.
-
-    * Move, scale, and/or rotate the face and/or individual vertices and/or edges.
-
-    * Switch back to Object Mode, and then scale, rotate, and move the entire
-      cube
-
-
     .. figure:: /images/object-cube.png
         :width: 250px
 
         The cube in Object Mode
+
+    * With the cube selected, enter Edit Mode (:kbd:`Tab`)
 
     .. figure:: /images/edit-cube.png
         :width: 250px
 
         The cube in Edit Mode
 
+    * Deselect all (:kbd:`A`), then select one vertex
+
     .. figure:: /images/edit-cube-vertex.png
         :width: 250px
 
         One vertex selected in Edit Mode
+
+    * Add an adjacent vertext to the selection, and notice how the **edge** is
+      highlighted.
 
     .. figure:: /images/edit-cube-edge.png
         :width: 250px
 
         One edge selected in Edit Mode
 
+    * Select the other adjacent vertices to select the **face**.
+
     .. figure:: /images/edit-cube-face.png
         :width: 250px
 
         One face selected in Edit Mode
+
+    * Move, scale, and/or rotate the face and/or individual vertices and/or edges.
+
+    * Switch back to Object Mode, and then scale, rotate, and move the entire
+      cube
 
     .. figure:: /images/object-cube-warped.png
         :width: 250px

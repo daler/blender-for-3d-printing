@@ -24,18 +24,33 @@ The tutorial is divided into three sections:
 :ref:`printing`
     Practical guidelines and tips for a successful 3D print
 
+What is Blender?
+----------------
+
+Blender is powerful free and open source 3D creation suite.  See the Blender
+website for `features <https://www.blender.org/features/>`_, which include mesh
+modeling, animation, a full video editor, game engine, camera and object
+tracking, and more. People can (and do) make movies with it. We will just be
+using its mesh modeling features.
+
+Getting Blender
+---------------
+Available for Windows, Mac, Linux, FreeBSD from `blender.org
+<https://www.blender.org/download/>`_. Download the zip file, uncompress it,
+and run Blender right from it -- no installation necessary.
+
+About
+-----
+Comments or issues about these materials, or want to add your own content? See
+the `github page <https://github.com/daler/blender-for-3d-printing>`_,
+specifically the `issue tracker
+<https://github.com/daler/blender-for-3d-printing/issues>`_..
+
 Copyright 2016 Ryan Dale
 
 This work is licensed under the Creative Commons Attribution 4.0 International
 License (CC-BY). To view a copy of this license, visit
 http://creativecommons.org/licenses/by/4.0/.
-
-For further learning, there are many resources including:
-
-    * `Blender Manual <https://www.blender.org/manual/>`_
-    * `blender.stackexchange.com <http://blender.stackexchange.com/>`_
-    * `blenderartists.org forum <http://blenderartists.org/forum/>`_
-    * `List of support options at blender.org <http://www.blender.org/support/>`_
 
 Sections
 --------

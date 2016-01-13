@@ -92,6 +92,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../next-steps/index.html">Next steps</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../next-steps/index.html#learning-resources">Learning resources</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../next-steps/index.html#cheatsheets">Cheatsheets</a></li>
 </ul>
 </li>
@@ -281,6 +282,48 @@ object. Toggle the shelf on and off with <code class="kbd docutils literal"><spa
 <div class="last figure" id="id4">
 <img alt="../_images/nkey-after.png" src="../_images/nkey-after.png" />
 <p class="caption"><span class="caption-text">Properties after resetting transforms</span></p>
+</div>
+</div>
+</div>
+<div class="section" id="units">
+<h2>Units<a class="headerlink" href="#units" title="Permalink to this headline">¶</a></h2>
+<p>For 3D printing, we want to be able to relate what we do in Blender to the real
+world. By default, Blender uses arbitrary &#8220;Blender units&#8221;: one unit per grid
+square. Let&#8217;s set the units to millimeters.</p>
+<div class="exercise admonition">
+<p class="first admonition-title">Exercise</p>
+<ul class="simple">
+<li>In the Properties panel (far right of the interface), click the button
+for Scene Properties (see figure below)</li>
+</ul>
+<div class="figure" id="id5">
+<img alt="../_images/scene-properties.png" src="../_images/scene-properties.png" />
+<p class="caption"><span class="caption-text">Scene properties (after clicking highlighted button)</span></p>
+</div>
+<ul class="simple">
+<li>Click <span class="menuselection">Metric</span>, and enter <span class="menuselection">0.001</span> into the
+&#8220;Scale&#8221; text box. Now one &#8220;Blender unit&#8221; will be equivalent to 0.001
+meters or 1 mm.</li>
+</ul>
+<div class="figure" id="id6">
+<img alt="../_images/scene-properties-units.png" src="../_images/scene-properties-units.png" />
+<p class="caption"><span class="caption-text">After setting units to millimeters</span></p>
+</div>
+<ul class="simple">
+<li>In the Properties Shelf (the one toggled by <code class="kbd docutils literal"><span class="pre">N</span></code>), look for the
+<span class="menuselection">Display</span> section. It may be folded up, so click the arrow
+to unfold it.</li>
+<li>Enter <span class="menuselection">0.001</span> into the &#8220;Scale&#8221; text box. This makes the
+background grid use millimeters as well.</li>
+</ul>
+<div class="figure" id="id7">
+<img alt="../_images/display-panel.png" src="../_images/display-panel.png" />
+<p class="caption"><span class="caption-text">Set the scale of grid lines to be 0.001 units (mm) as well.</span></p>
+</div>
+<div class="last admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">If importing a file that someone else created, you may have to reset
+the units. You may find yourself doing this a lot . . .</p>
 </div>
 </div>
 <div class="admonition seealso">

@@ -92,6 +92,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../next-steps/index.html">Next steps</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../next-steps/index.html#learning-resources">Learning resources</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../next-steps/index.html#cheatsheets">Cheatsheets</a></li>
 </ul>
 </li>
@@ -137,8 +138,8 @@
 <p>These are two techniques that can help with adding mesh geometry.</p>
 <table border="1" class="docutils">
 <colgroup>
-<col width="52%" />
-<col width="48%" />
+<col width="33%" />
+<col width="67%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">Action</th>
@@ -160,6 +161,16 @@
 <li>Patch the large hole in the torus: select a single vertex and extrude it
 into the middle of the hole (<code class="kbd docutils literal"><span class="pre">E</span></code>)</li>
 </ul>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p>When extruding, as soon as you hit <code class="kbd docutils literal"><span class="pre">E</span></code>, new vertices appear. They
+appear whether or not you move them away from where they were extruded.
+This means that if you do <code class="kbd docutils literal"><span class="pre">E</span></code>, <code class="kbd docutils literal"><span class="pre">RMB</span></code> to cancel, the extruded
+vertices are directly on top of the original ones, even though it might
+not look like it.</p>
+<p class="last">Either move/scale/rotate the new vertices, undo (<code class="kbd docutils literal"><span class="pre">Ctrl-Z</span></code>), or
+delete the vertices (<code class="kbd docutils literal"><span class="pre">X</span></code>).</p>
+</div>
 <div class="figure" id="id1">
 <a class="reference internal image-reference" href="../_images/torus-extruded-vertex.png"><img alt="../_images/torus-extruded-vertex.png" src="../_images/torus-extruded-vertex.png" style="width: 250px;" /></a>
 <p class="caption"><span class="caption-text">A single vertex extruded. Notice the new vertex (selected) already has
@@ -197,21 +208,61 @@ filling the faces.</li>
 </div>
 <div class="exercise admonition">
 <p class="first admonition-title">Exercise</p>
-<p>To demonstrate extruding and insetting the goal here is to make an &#8220;L&#8221;
-shape with an inset cup. A paperclip holder maybe?</p>
-<ul class="last simple">
+<p>To demonstrate extruding and insetting the goal here is to start with
+a cube and make the following object:</p>
+<div class="figure" id="id2">
+<a class="reference internal image-reference" href="../_images/insetting-2.png"><img alt="../_images/insetting-2.png" src="../_images/insetting-2.png" style="width: 250px;" /></a>
+<p class="caption"><span class="caption-text">We&#8217;re aiming to make something like this from a cube.</span></p>
+</div>
+<ul class="simple">
 <li>Back in Object mode, delete the torus.</li>
 <li>Snap the cursor to the center (0, 0, 0)</li>
 <li>Add a cube</li>
 <li>Switch to Edit Mode</li>
 <li>Select the top face and extrude upwards (<code class="kbd docutils literal"><span class="pre">E</span></code>, <code class="kbd docutils literal"><span class="pre">LMB</span></code> to confirm,
 <code class="kbd docutils literal"><span class="pre">RMB</span></code> to cancel)</li>
-<li>Select one of the side faces and extrude it sideways to make the bottom
-of the &#8220;L&#8221;.</li>
-<li>Select the top face of the bottom of the &#8220;L&#8221; you just extruded</li>
-<li>Use <code class="kbd docutils literal"><span class="pre">I</span></code> to inset the face a bit</li>
-<li>Move the inset face downward to create an indentation</li>
 </ul>
+<div class="figure" id="id3">
+<a class="reference internal image-reference" href="../_images/extruding-1.png"><img alt="../_images/extruding-1.png" src="../_images/extruding-1.png" style="width: 250px;" /></a>
+<p class="caption"><span class="caption-text">Extruding the top face</span></p>
+</div>
+<ul class="simple">
+<li>Select one of the side faces and extrude it sideways to make the first
+part of the bottom of the &#8220;L&#8221; (see figure below)</li>
+</ul>
+<div class="figure" id="id4">
+<a class="reference internal image-reference" href="../_images/extruding-2.png"><img alt="../_images/extruding-2.png" src="../_images/extruding-2.png" style="width: 250px;" /></a>
+<p class="caption"><span class="caption-text">Extruding the side face</span></p>
+</div>
+<ul class="simple">
+<li>With that face still selected, extrude again (see figure below)</li>
+</ul>
+<div class="figure" id="id5">
+<a class="reference internal image-reference" href="../_images/extruding-3.png"><img alt="../_images/extruding-3.png" src="../_images/extruding-3.png" style="width: 250px;" /></a>
+<p class="caption"><span class="caption-text">Extruding again</span></p>
+</div>
+<ul class="simple">
+<li>Select the top face of the bottom of the &#8220;L&#8221; you just extruded and use
+<code class="kbd docutils literal"><span class="pre">I</span></code> to inset the face a bit (see figure below).</li>
+</ul>
+<div class="figure" id="id6">
+<a class="reference internal image-reference" href="../_images/insetting-1.png"><img alt="../_images/insetting-1.png" src="../_images/insetting-1.png" style="width: 250px;" /></a>
+<p class="caption"><span class="caption-text">Insetting the top face</span></p>
+</div>
+<ul class="simple">
+<li>With the inset face still selected, extrude that &#8211; but this time, move
+it <em>down</em> to create an indentation (see figure below)</li>
+</ul>
+<div class="figure" id="id7">
+<a class="reference internal image-reference" href="../_images/insetting-2.png"><img alt="../_images/insetting-2.png" src="../_images/insetting-2.png" style="width: 250px;" /></a>
+<p class="caption"><span class="caption-text">Extruding the inset face downward</span></p>
+</div>
+<div class="last admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Try experimenting &#8211; what happens if you move the inset face down
+directly instead of extruding it down? What happens if instead of two
+extrusions for the bottom leg of the &#8220;L&#8221; you just do 1?</p>
+</div>
 </div>
 </div>
 
