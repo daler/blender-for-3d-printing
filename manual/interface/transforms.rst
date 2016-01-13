@@ -13,7 +13,7 @@ Action                  Description
 :kbd:`LMB`             Confirm transformation
 ====================== ================================================
 
-.. admonition:: Exercise
+.. admonition:: Exercise: experimenting with transforms
     :class: exercise
 
     * Move, rotate, scale the cube to get used to the controls
@@ -40,7 +40,7 @@ Action                                              Description
 :kbd:`Shift` (while moving the mouse)               Fine-tune the transformation (10x slower)
 =================================================== ================================================
 
-.. admonition:: Exercise
+.. admonition:: Exercise: constrained transforms
     :class: exercise
 
     * Make the cube taller (:kbd:`S`, :kbd:`Z`)
@@ -64,7 +64,7 @@ Action                                                       Description
 :kbd:`number keys` (immediately after initiating transform)  Precise entry of transformation
 ============================================================ ================================================
 
-.. admonition:: Exercise
+.. admonition:: Exercise: numerical transforms
     :class: exercise
 
     * Rotate the cube by 45 degrees along the Y axis
@@ -87,7 +87,7 @@ Action                                              Description
 :kbd:`N`                                            Toggle the Properties Shelf
 =================================================== ================================================
 
-.. admonition:: Exercise
+.. admonition:: Exercise: precision transforms
     :class: exercise
 
     * Using the Properties Shelf, reset the cube to its original location (0,
@@ -109,7 +109,7 @@ For 3D printing, we want to be able to relate what we do in Blender to the real
 world. By default, Blender uses arbitrary "Blender units": one unit per grid
 square. Let's set the units to millimeters.
 
-.. admonition:: Exercise
+.. admonition:: Exercise: setting units
     :class: exercise
 
     * In the Properties panel (far right of the interface), click the button

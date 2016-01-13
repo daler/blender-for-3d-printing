@@ -6,7 +6,7 @@ printing. This section demonstrates the changes that occur to a mesh when
 exporting and re-importing an STL
 
 
-.. admonition:: Exercise
+.. admonition:: Exercise: Exporting an STL
     :class: exercise
 
     * Either save your existing work as a `.blend` file (:menuselection:`File
@@ -25,7 +25,10 @@ particular those used for slicing models for printing. The STL format works in
 triangles (**tris**), but we were modeling in **quads**. Exporting an STL
 implicitly triangulated all faces.
 
-.. admonition:: Exercise
+Sometimes it is useful to convert from tris back to quads, since they're easier
+to think about, manipulate, and calculate coordinates for precision modeling.
+
+.. admonition:: Exercise: tris to quads
     :class: exercise
 
     * In Edit Mode, select all faces

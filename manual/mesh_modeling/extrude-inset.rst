@@ -10,7 +10,7 @@ Action                   Description
 ======================== ================================================
 
 
-.. admonition:: Exercise
+.. admonition:: Exercise: extruding vertex to patch a hole
     :class: exercise
 
     * Patch the large hole in the torus: select a single vertex and extrude it
@@ -62,7 +62,7 @@ Action                   Description
     .. figure:: /images/torus-fill-5.png
         :width: 250px
 
-.. admonition:: Exercise
+.. admonition:: Exercise: extruding and insetting
     :class: exercise
 
     To demonstrate extruding and insetting the goal here is to start with

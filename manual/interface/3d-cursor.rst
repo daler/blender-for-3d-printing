@@ -18,7 +18,7 @@ Action                  Description
 :kbd:`Shift-S`         Snap menu
 ====================== ================================================
 
-.. admonition:: Exercise
+.. admonition:: Exercise: Snapping the 3D Cursor
     :class: exercise
 
     * Move the 3D Cursor somewhere in the scene (:kbd:`LMB`)

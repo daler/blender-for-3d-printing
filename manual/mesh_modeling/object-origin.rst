@@ -11,7 +11,7 @@ the Properties shelf or to re-center the origin at the object's new geometry.
 If you need to catch up, you may want to start by downloading this .blend file:
 :download:`L.blend </images/L.blend>`.
 
-.. admonition:: Exercise
+.. admonition:: Exercise: resetting the origin
     :class: exercise
 
     * To make coordinates easier to calculate, let's move the "L" so that the
@@ -43,7 +43,7 @@ If you need to catch up, you may want to start by downloading this .blend file:
       can't be set in Edit Mode)
 
     * Set origin to cursor (:kbd:`Space`, search for "Set Origin", Then choose
-      "Origin to 3D Cursor". Or :kbd:`Ctrl-Alt-Shift-C).
+      "Origin to 3D Cursor". Or :kbd:`Ctrl-Alt-Shift-C`).
 
     * Set postion to Z=0
 

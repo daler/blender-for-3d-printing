@@ -12,7 +12,7 @@ Action                       Description
 :kbd:`Ctrl-MMB`/:kbd:`Wheel` Zoom the view
 ============================ ============================================================
 
-.. admonition:: Exercise
+.. admonition:: Exercise: getting used to the view controls
     :class: exercise
 
     * Manipulate the view so that only the cube fills the 3D View.
@@ -45,7 +45,7 @@ Action             Description
 ================== ============================================================
 
 
-.. admonition:: Exercise
+.. admonition:: Exercise: Snapping the view
     :class: exercise
 
     * Play around with the view -- use :kbd:`MMB` to randomly rotate the view,

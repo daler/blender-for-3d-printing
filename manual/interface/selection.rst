@@ -19,7 +19,7 @@ Action                  Description
 
     The cube on the right is selected
 
-.. admonition:: Exercise
+.. admonition:: Exercise: selecting and deleting
     :class: exercise
 
     * Deselect all (:kbd:`A`, may have to hit it a couple times)
