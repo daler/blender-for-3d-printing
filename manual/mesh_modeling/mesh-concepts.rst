@@ -226,4 +226,30 @@ Action                               Description
 
     .. note::
 
-        * Leave the larger hole for now -- we need to learn another technique.
+        * Leave the larger hole for now -- we need to learn another
+          technique.
+
+
+Selection extras
+----------------
+
+At the bottom of the 3D window are buttons that allow selection of entire edges
+or faces. Depending on what part of a model or what kinds of tasks you're
+doing, it may be more convenient to switch to another mode.
+
+.. figure:: /images/v-e-f-selection.png
+
+    From left to right: vertices, edges, faces
+
+.. figure:: /images/selection-vertex.png
+
+    Default vertex selection
+
+.. figure:: /images/selection-edge.png
+
+    Edge selection: :kbd:`RMB` on an edge will select it.
+
+.. figure:: /images/selection-face.png
+
+    Face selection: :kbd:`RMB` in the middle of a face will select it.
+
