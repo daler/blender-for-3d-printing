@@ -10,7 +10,7 @@ exporting and re-importing an STL
     :class: exercise
 
     * Either save your existing work as a `.blend` file (:menuselection:`File
-      --> Save`) or load this example: :download:`/images/L-centered.blend`.
+      --> Save`) or load this example: :download:`L-centered.blend </images/L-centered.blend>`.
 
     * Select the object to export.
 

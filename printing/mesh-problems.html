@@ -34,8 +34,8 @@
   
     <link rel="top" title="Blender for 3D Printing" href="../index.html"/>
         <link rel="up" title="Printing" href="index.html"/>
-        <link rel="next" title="Checklist and examples" href="checklist-and-examples.html"/>
-        <link rel="prev" title="Blender’s tools for checking models" href="3d-print-toolbox.html"/> 
+        <link rel="next" title="Next steps" href="../next-steps/index.html"/>
+        <link rel="prev" title="3D Printing background" href="concepts.html"/> 
 
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
@@ -85,14 +85,13 @@
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Printing</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="export-stl.html">Exporting to STL</a></li>
 <li class="toctree-l2"><a class="reference internal" href="concepts.html">3D Printing background</a></li>
-<li class="toctree-l2"><a class="reference internal" href="3d-print-toolbox.html">Blender&#8217;s tools for checking models</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="">Mesh problems and solutions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="checklist-and-examples.html">Checklist and examples</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../next-steps/index.html">Next steps</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../next-steps/index.html#learning-resources">Learning resources</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../next-steps/index.html#cheatsheets">Cheatsheets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../next-steps/index.html#demo-file">Demo file</a></li>
 </ul>
 </li>
 </ul>
@@ -134,7 +133,112 @@
             
   <div class="section" id="mesh-problems-and-solutions">
 <h1>Mesh problems and solutions<a class="headerlink" href="#mesh-problems-and-solutions" title="Permalink to this headline">¶</a></h1>
-<p>The 3D Print Toolbox and Mesh Analysis can help with identifying issues.</p>
+<p>Printer limitations require meshes to meet certain criteria. These criteria
+depend on the printer and material, but Blender has tools to help troubleshoot
+and spot issues before sending to the printer.</p>
+<div class="section" id="d-print-toolbox">
+<h2>3D Print Toolbox<a class="headerlink" href="#d-print-toolbox" title="Permalink to this headline">¶</a></h2>
+<p>Blender has many available <strong>Add-ons</strong> or plugins. By default, not all are
+pre-loaded. One of these is the 3D Print Toolbox, which we have to enable.</p>
+<div class="admonition-exercise-enabling-the-3d-print-toolbox admonition">
+<p class="first admonition-title">Exercise: enabling the 3D Print Toolbox.</p>
+<ul class="simple">
+<li><span class="menuselection">File ‣ User Preferences</span> (or <code class="kbd docutils literal"><span class="pre">Ctrl-Alt-U</span></code>) to open the
+User Preferences menu.</li>
+<li>In the <span class="menuselection">Add-ons</span> tab, start typing <cite>3d print</cite> into the search
+bar. Once the &#8220;Mesh: 3D Print Toolbox&#8221; shows up, click the checkbox on the far
+right to enable this add-on.</li>
+</ul>
+<div class="figure" id="id2">
+<a class="reference internal image-reference" href="../_images/user_preferences_3dprint.png"><img alt="../_images/user_preferences_3dprint.png" src="../_images/user_preferences_3dprint.png" style="width: 75%;" /></a>
+<p class="caption"><span class="caption-text"><span class="menuselection">File ‣ User Preferences ‣ &#8220;Add-ons&#8221; Tab</span>. Check the box
+on the far right to enable</span></p>
+</div>
+<ul class="simple">
+<li>Save User Preferences if you want this to be loaded next time you run Blender.</li>
+<li>Close the User Preferences window.</li>
+<li>In the Tool Shelf, there should be a new <cite>3D Printing</cite> tab.</li>
+</ul>
+<div class="last figure" id="id3">
+<img alt="../_images/3dprint-toolbox.png" src="../_images/3dprint-toolbox.png" />
+<p class="caption"><span class="caption-text">The newly available 3D Printing toolbox</span></p>
+</div>
+</div>
+</div>
+<div class="section" id="running-the-3d-print-toolbox">
+<h2>Running the 3D Print Toolbox<a class="headerlink" href="#running-the-3d-print-toolbox" title="Permalink to this headline">¶</a></h2>
+<p>This tool checks for the following issues. Images are from the <a class="reference external" href="http://wiki.blender.org/index.php/Extensions:2.6/Py/Scripts/Modeling/PrintToolbox">Blender 2.6
+docs</a>
+for the toolbox.</p>
+<div class="figure" id="id4">
+<img alt="../_images/3dpt-intersections.png" src="../_images/3dpt-intersections.png" />
+<p class="caption"><span class="caption-text">Intersecting faces. Internal vertices will need to be deleted</span></p>
+</div>
+<div class="figure" id="id5">
+<img alt="../_images/3dpt-distorted.png" src="../_images/3dpt-distorted.png" />
+<p class="caption"><span class="caption-text">Distorted faces. Triangulation might help this.</span></p>
+</div>
+<div class="figure" id="id6">
+<img alt="../_images/3dpt-thickness.png" src="../_images/3dpt-thickness.png" />
+<p class="caption"><span class="caption-text">Thickness. A redesign is needed.</span></p>
+</div>
+<div class="figure" id="id7">
+<img alt="../_images/3dpt-overhang.png" src="../_images/3dpt-overhang.png" />
+<p class="caption"><span class="caption-text">Overhang. Supports can be added (by extruding small parts of the glass&#8217;
+bowl downwards to Z=0)</span></p>
+</div>
+<div class="exercise admonition">
+<p class="first admonition-title">Exercise: running some checks in the 3D Print Toolbox</p>
+<ul class="simple">
+<li>Set the parameters to match the tolerances of the intended printer</li>
+<li>Enter Edit mode</li>
+<li>Click the <span class="menuselection">Check All</span> button</li>
+<li>The <span class="menuselection">Output</span> box will show the results. If problematic regions
+were found, a clickable button will appear in the output. Clicking this will
+highlight the faces.</li>
+</ul>
+<div class="figure" id="id8">
+<img alt="../_images/3dpt-results.png" src="../_images/3dpt-results.png" />
+<p class="caption"><span class="caption-text">Note the &#8220;Overhang face&#8221; is a button that can be clicked. Doing so
+highlights the faces (in face select mode)</span></p>
+</div>
+<div class="last admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">There should always be at least some faces flagged as &#8220;Overhanging
+face&#8221; since these will be on the build surface of the printer. You will
+have to evaluate whether any additional overhanging faces warrant
+fixing.</p>
+</div>
+</div>
+</div>
+<div class="section" id="mesh-analysis">
+<h2>Mesh Analysis<a class="headerlink" href="#mesh-analysis" title="Permalink to this headline">¶</a></h2>
+<p>Complementary to the 3D Print Toolbox is the Mesh Analysis panel. Rather than
+yes/no answers per face, this generates a heatmap of problematic areas. These images are from the <a class="reference external" href="https://www.blender.org/manual/modeling/meshes/mesh_analysis.html">Blender Mesh Analysis docs</a>.</p>
+<div class="figure" id="id9">
+<img alt="../_images/mesh-analysis.png" src="../_images/mesh-analysis.png" />
+<p class="caption"><span class="caption-text">The Mesh Analysis panel, in the Properties Shelf. Must be in Edit Mode to see this</span></p>
+</div>
+<div class="figure" id="id10">
+<a class="reference internal image-reference" href="../_images/mesh-analysis-overhang.jpg"><img alt="../_images/mesh-analysis-overhang.jpg" src="../_images/mesh-analysis-overhang.jpg" style="width: 250px;" /></a>
+<p class="caption"><span class="caption-text">Overhang, with red indicating more problematic areas</span></p>
+</div>
+<div class="figure" id="id11">
+<a class="reference internal image-reference" href="../_images/mesh-analysis-thickness.jpg"><img alt="../_images/mesh-analysis-thickness.jpg" src="../_images/mesh-analysis-thickness.jpg" style="width: 250px;" /></a>
+<p class="caption"><span class="caption-text">Thickness, red shows more problematic</span></p>
+</div>
+<div class="figure" id="id12">
+<a class="reference internal image-reference" href="../_images/mesh-analysis-distortion.jpg"><img alt="../_images/mesh-analysis-distortion.jpg" src="../_images/mesh-analysis-distortion.jpg" style="width: 250px;" /></a>
+<p class="caption"><span class="caption-text">Distortion, where triangulation may have a hard time figuring out how to
+divide faces.</span></p>
+</div>
+<div class="figure" id="id13">
+<a class="reference internal image-reference" href="../_images/mesh-analysis-sharpness.jpg"><img alt="../_images/mesh-analysis-sharpness.jpg" src="../_images/mesh-analysis-sharpness.jpg" style="width: 250px;" /></a>
+<p class="caption"><span class="caption-text">Like thickness, too-sharp areas can be difficult to print.</span></p>
+</div>
+</div>
+<div class="section" id="incomplete-guide-for-fixing-issues">
+<h2>Incomplete guide for fixing issues<a class="headerlink" href="#incomplete-guide-for-fixing-issues" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="docutils">
 <colgroup>
 <col width="21%" />
@@ -146,28 +250,32 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>non-manifold</td>
+<tr class="row-even"><td>Intersections</td>
+<td>Fix geometry by deleting inner vertices</td>
+</tr>
+<tr class="row-odd"><td>Non-manifold</td>
 <td>Fill holes (<code class="kbd docutils literal"><span class="pre">F</span></code>; may need <code class="kbd docutils literal"><span class="pre">Ctrl-T</span></code> as well)</td>
 </tr>
-<tr class="row-odd"><td>overhanging</td>
+<tr class="row-even"><td>Overhanging</td>
 <td>Add supports, or move widest face of model to Z=0</td>
 </tr>
-<tr class="row-even"><td>thin</td>
+<tr class="row-odd"><td>Thin</td>
 <td>Add geometry or modify original design</td>
 </tr>
-<tr class="row-odd"><td>sharp, too-small faces</td>
+<tr class="row-even"><td>Sharp, too-small faces</td>
 <td>Add geometry or modify design; try tri -&gt; quad -&gt;
 tri (<code class="kbd docutils literal"><span class="pre">Ctrl-T</span></code>, <code class="kbd docutils literal"><span class="pre">Ctrl-J</span></code>, <code class="kbd docutils literal"><span class="pre">Ctrl-T</span></code> or
 <a class="reference external" href="https://www.blender.org/manual/modeling/modifiers/generate/remesh.html">Remesh modifier</a></td>
 </tr>
 </tbody>
 </table>
-<p>Some useful links:</p>
+<p>Some useful links with more info on fixing issues:</p>
 <ul class="simple">
 <li><a class="reference external" href="http://www.shapeways.com/tutorials/fixing-non-manifold-models">Fixing non-manifold models</a> in Blender, from <a class="reference external" href="http://www.shapeways.com">Shapeways</a></li>
 <li><a class="reference external" href="http://www.shapeways.com/tutorials/creating-hollow-objects">Creating hollow objects</a> in Blender, from <a class="reference external" href="http://www.shapeways.com">Shapeways</a></li>
 <li><a class="reference external" href="http://www.sculpteo.com/en/tutorial/prepare-your-model-3d-printing-blender/">Tips for modeling in Blender for 3D printing</a>, from <a class="reference external" href="http://www.sculpteo.com/">Sculpteo</a></li>
 </ul>
+</div>
 </div>
 
 
@@ -176,10 +284,10 @@ tri (<code class="kbd docutils literal"><span class="pre">Ctrl-T</span></code>, 
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="checklist-and-examples.html" class="btn btn-neutral float-right" title="Checklist and examples">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../next-steps/index.html" class="btn btn-neutral float-right" title="Next steps">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="3d-print-toolbox.html" class="btn btn-neutral" title="Blender’s tools for checking models"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="concepts.html" class="btn btn-neutral" title="3D Printing background"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
