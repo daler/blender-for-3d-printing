@@ -49,3 +49,9 @@ Google for "Blender Cheatsheet"; here are some direct links to get you started:
 * `one <http://www.giudansky.com/design/51-blender-map>`_
 * `two <https://63838860080f936a9e74ec314fea61e51c110542.googledrive.com/host/0B75zuK6fBv7-UkE2VU5takkxUTA/files/CHEAT_SHEET.pdf>`_
 * `three <http://gryllus.net/Blender/Syllabus/Blender%20Hotkeys%20Cheatsheet.pdf>`_
+
+Demo file
+---------
+:download:`instrument-mount.blend </images/instrument-mount.blend>`, modified
+from `simple beaker clamp <http://3dprint.nih.gov/discover/3DPX-002153>`_
+(public domain license) on the `NIH Print Exchange <http://3dprint.nih.gov/>`_
