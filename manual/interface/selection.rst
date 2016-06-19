@@ -49,3 +49,9 @@ Action                  Description
 
          The camera and lamp are used for rendering images -- we don't need
          them for 3D printing work.
+
+.. seealso::
+
+    The Blender documentation's `section on selecting
+    <https://www.blender.org/manual/modeling/meshes/selecting/introduction.html>`_
+    has lots more information and shows all sorts of ways to make a selection.
