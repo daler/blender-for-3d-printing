@@ -253,3 +253,11 @@ doing, it may be more convenient to switch to another mode.
 
     Face selection: :kbd:`RMB` in the middle of a face will select it.
 
+
+.. seealso::
+
+    See the Blener manual's `introduction to meshes
+    <https://www.blender.org/manual/modeling/meshes/introduction.html>`_ and
+    the `editing meshes
+    <https://www.blender.org/manual/modeling/meshes/editing/index.html>`_ for
+    lots more on mesh editing.

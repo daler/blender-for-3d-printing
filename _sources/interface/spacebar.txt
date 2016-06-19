@@ -32,3 +32,10 @@ Action                  Description
 
     * Snap the cursor to the center and add a cube to get ready for the next
       exercise.
+
+.. seealso::
+
+    THe `Wikipedia page on Blender
+    <https://en.wikipedia.org/wiki/Blender_%28software%29#Suzanne>`_ describes
+    the history of Suzanne the monkey (along with all sorts of other Blender
+    history).
