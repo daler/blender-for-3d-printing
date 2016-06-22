@@ -92,15 +92,15 @@ Examples
 Example "L" shape
 -----------------
 
-- with units stored in the STL: :download:`L-centered-units.stl </images/L-centered-units.stl>`
-- units not stored in the STL: :download:`L-centered-no-units.stl </images/L-centered-no-units.stl>`
-- blender file: :download:`L-centered.blend </images/L-centered.blend>`
+- units stored in the STL (:download:`L-centered-units.stl </images/L-centered-units.stl>`)
+- units not stored in the STL (:download:`L-centered-no-units.stl </images/L-centered-no-units.stl>`)
+- blender file (:download:`L-centered.blend </images/L-centered.blend>`)
 
 Example instrument mount
 ------------------------
 
 - Started from `Simple Beaker Clamp
   <http://3dprint.nih.gov/discover/3DPX-002153>`_ on the `NIH 3D Print Exchange
-  <http://3dprint.nih.gov/>`_ (:download:`/images/MainArm_0.stl`_)
-- Modified instrument mount Blender file: :download:`instrument-mount.blend </images/instrument-mount.blend>`
-- Modified instrument mount STL file: :download:`instrument-mount.stl </images/instrument-mount.stl>`
+  <http://3dprint.nih.gov/>`_ (:download:`MainArm_0.stl </images/MainArm_0.stl>`)
+- Modified instrument mount Blender file (:download:`instrument-mount.blend </images/instrument-mount.blend>`)
+- Modified instrument mount STL file (:download:`instrument-mount.stl </images/instrument-mount.stl>`)
