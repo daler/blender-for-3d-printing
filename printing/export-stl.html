@@ -88,7 +88,13 @@
 <li class="toctree-l1"><a class="reference internal" href="../interface/index.html">Interface</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../mesh_modeling/index.html">Mesh modeling</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Printing</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Exporting to STL</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Exporting to STL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#importing-an-stl">Importing an STL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#examples">Examples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#example-l-shape">Example &#8220;L&#8221; shape</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#example-instrument-mount">Example instrument mount</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="concepts.html">3D Printing background</a></li>
 <li class="toctree-l2"><a class="reference internal" href="mesh-problems.html">Mesh problems and solutions</a></li>
 </ul>
@@ -116,7 +122,7 @@
         <div class="rst-content">
           
 
- 
+
 
 
 
@@ -149,7 +155,7 @@ exporting and re-importing an STL</p>
 <p class="first admonition-title">Exercise: Exporting an STL</p>
 <ul class="simple">
 <li>Either save your existing work as a <cite>.blend</cite> file (<span class="menuselection">File
-‣ Save</span>) or load this example: <a class="reference download internal" href="../_downloads/L-centered.blend" download=""><code class="xref download docutils literal"><span class="pre">L-centered.blend</span></code></a>.</li>
+‣ Save</span>) or load this example: <a class="reference download internal" href="../_downloads/L-centered.blend"><code class="xref download docutils literal"><span class="pre">L-centered.blend</span></code></a>.</li>
 <li>Select the object to export.</li>
 <li><span class="menuselection">File ‣ Export ‣ Stl</span></li>
 <li>Check the <cite>Scene Unit</cite> checkbox. This stores the units in the STL file.</li>
@@ -169,13 +175,18 @@ version: what&#8217;s different?</li>
 <a class="reference internal image-reference" href="../_images/imported-stl.png"><img alt="../_images/imported-stl.png" src="../_images/imported-stl.png" style="width: 250px;" /></a>
 </div>
 </div>
+</div>
+<div class="section" id="importing-an-stl">
+<h1>Importing an STL<a class="headerlink" href="#importing-an-stl" title="Permalink to this headline">¶</a></h1>
+<p>Be careful: when opening someone else&#8217;s STL, often we don&#8217;t know ahead of time
+if units were stored in the STL file.  If you import an object and it&#8217;s either
+huge or so small it looks like nothing happened, you will need to be more
+careful about units.  If units were not stored in the STL, Blender assumes
+meters. If units are not set in Blender but they are set in the STL, Blender
+assumes its &#8220;None&#8221; units are meters. Here is a summary of how Blender behaves
+when importing STL files with or without units:</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p>Be careful: when opening someone else&#8217;s STL, often we don&#8217;t know ahead of
-time if units were stored in the STL file. If units were not stored,
-Blender assumes meters. If units are not set in Blender but they are set in
-the STL, Blender assumes it&#8217;s &#8220;None&#8221; units are meters.</p>
-<p>That is:</p>
 <table border="1" class="docutils">
 <colgroup>
 <col width="33%" />
@@ -215,7 +226,7 @@ the STL, Blender assumes it&#8217;s &#8220;None&#8221; units are meters.</p>
 </tr>
 </tbody>
 </table>
-<p class="last">If the size of the imported object seems wrong, try <a class="reference internal" href="../interface/transforms.html#units"><span class="std std-ref">setting or unsetting
+<p class="last">If the size of the imported object seems wrong, try <a class="reference internal" href="../interface/transforms.html#units"><span>setting or unsetting
 Blender&#8217;s units</span></a></p>
 </div>
 <p>Many algorithms for working with 3D objects operate on triangles &#8211; in
@@ -240,6 +251,25 @@ algorithm is not perfect. To fix this, we could delete the edges and use
 <code class="kbd docutils literal"><span class="pre">F</span></code> to re-fill the faces as quads. We might have to do this if we
 imported someone else&#8217;s STL. In practice, it&#8217;s better to save the
 original .blend file for modifiying.</li>
+</ul>
+</div>
+</div>
+<div class="section" id="examples">
+<h1>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="example-l-shape">
+<h2>Example &#8220;L&#8221; shape<a class="headerlink" href="#example-l-shape" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>with units stored in the STL: <a class="reference download internal" href="../_downloads/L-centered-units.stl"><code class="xref download docutils literal"><span class="pre">L-centered-units.stl</span></code></a></li>
+<li>units not stored in the STL: <a class="reference download internal" href="../_downloads/L-centered-no-units.stl"><code class="xref download docutils literal"><span class="pre">L-centered-no-units.stl</span></code></a></li>
+<li>blender file: <a class="reference download internal" href="../_downloads/L-centered.blend"><code class="xref download docutils literal"><span class="pre">L-centered.blend</span></code></a></li>
+</ul>
+</div>
+<div class="section" id="example-instrument-mount">
+<h2>Example instrument mount<a class="headerlink" href="#example-instrument-mount" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Started from <a class="reference external" href="http://3dprint.nih.gov/discover/3DPX-002153">Simple Beaker Clamp</a> on the <a class="reference external" href="http://3dprint.nih.gov/">NIH 3D Print Exchange</a> (<a href="#id1"><span class="problematic" id="id2">:download:`/images/MainArm_0.stl`_</span></a>)</li>
+<li>Modified instrument mount Blender file: <a class="reference download internal" href="../_downloads/instrument-mount.blend"><code class="xref download docutils literal"><span class="pre">instrument-mount.blend</span></code></a></li>
+<li>Modified instrument mount STL file: <a class="reference download internal" href="../_downloads/instrument-mount.stl"><code class="xref download docutils literal"><span class="pre">instrument-mount.stl</span></code></a></li>
 </ul>
 </div>
 </div>
