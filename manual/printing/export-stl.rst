@@ -33,14 +33,19 @@ exporting and re-importing an STL
     .. figure:: /images/imported-stl.png
         :width: 250px
 
-.. note:: 
 
-    Be careful: when opening someone else's STL, often we don't know ahead of
-    time if units were stored in the STL file. If units were not stored,
-    Blender assumes meters. If units are not set in Blender but they are set in
-    the STL, Blender assumes it's "None" units are meters.
+Importing an STL
+================
 
-    That is:
+Be careful: when opening someone else's STL, often we don't know ahead of time
+if units were stored in the STL file.  If you import an object and it's either
+huge or so small it looks like nothing happened, you will need to be more
+careful about units.  If units were not stored in the STL, Blender assumes
+meters. If units are not set in Blender but they are set in the STL, Blender
+assumes its "None" units are meters. Here is a summary of how Blender behaves
+when importing STL files with or without units:
+
+.. note::
 
     =============== =========== =======
     Blender units   STL units   Imported object size
@@ -55,7 +60,6 @@ exporting and re-importing an STL
 
     If the size of the imported object seems wrong, try :ref:`setting or unsetting
     Blender's units <units>`
-
 
 
 Many algorithms for working with 3D objects operate on triangles -- in
@@ -82,3 +86,21 @@ to think about, manipulate, and calculate coordinates for precision modeling.
       imported someone else's STL. In practice, it's better to save the
       original .blend file for modifiying.
 
+Examples
+========
+
+Example "L" shape
+-----------------
+
+- with units stored in the STL: :download:`L-centered-units.stl </images/L-centered-units.stl>`
+- units not stored in the STL: :download:`L-centered-no-units.stl </images/L-centered-no-units.stl>`
+- blender file: :download:`L-centered.blend </images/L-centered.blend>`
+
+Example instrument mount
+------------------------
+
+- Started from `Simple Beaker Clamp
+  <http://3dprint.nih.gov/discover/3DPX-002153>`_ on the `NIH 3D Print Exchange
+  <http://3dprint.nih.gov/>`_ (:download:`/images/MainArm_0.stl`_)
+- Modified instrument mount Blender file: :download:`instrument-mount.blend </images/instrument-mount.blend>`
+- Modified instrument mount STL file: :download:`instrument-mount.stl </images/instrument-mount.stl>`
